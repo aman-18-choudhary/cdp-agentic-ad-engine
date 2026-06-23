@@ -1,0 +1,84 @@
+flowchart TB
+    subgraph Data_Generation["Data Generation Layer"]
+        SG[("scripts/prepare_data.py\nSynthetic Data Generator")]
+        PC[("data/product_catalog.json\n500+ Products")]
+    end
+
+    subgraph Producers["Producers"]
+        PA[("simulators/platform_a_producer.py\nReads CSV → JSON → Kafka")]
+        PB[("simulators/platform_b_producer.py\nReads CSV → JSON → Kafka")]
+    end
+
+    subgraph Stream["Event Streaming (Redpanda)"]
+        T1[("platform-a-events\nTopic")]
+        T2[("platform-b-events\nTopic")]
+    end
+
+    subgraph Consumer["Event Consumer"]
+        EC[("consumers/event_consumer.py\nValidates, Archives, Queues")]
+        S3[("MinIO / S3\nRaw Event Lake\nraw-events/{platform}/{date}/{hour}/events.jsonl")]
+        Q[("UIDEngineQueue\nIn-memory asyncio.Queue")]
+    end
+
+    subgraph UID["Identity Resolution Engine"]
+        DET[("uid_engine/deterministic.py\n1. Email match (SHA-256)\n2. Device fingerprint match (SHA-256)\nConfidence: 1.0")]
+        PROB[("uid_engine/probabilistic.py\nWeighted scoring:\n IP range (0.35)\n City (0.25)\n Device (0.20)\n Time (0.20)\nThreshold: 0.75")]
+        MERGER[("uid_engine/merger.py\nProfileMerger\nAsync MongoDB CRUD\nChange Stream watcher")]
+    end
+
+    subgraph Storage["Storage Layer"]
+        MONGO[("MongoDB :27017\nunified_profiles\n689 documents")]
+        QDRANT[("Qdrant :6333\nproducts vector collection\nnomic-embed-text")]
+        REDIS[("Redis :6379\nAd cache TTL=600s")]
+    end
+
+    subgraph Agents["AI Agents (Ollama)"]
+        IP[("agents/intent_profiler.py\nqwen2.5:3b\nBuilds LLM context → intent summary")]
+        PM[("agents/product_matcher.py\nnomic-embed-text + Qdrant\nTop-5 nearest products")]
+        AC[("agents/ad_creative.py\nqwen2.5:3b\nJSON output mode\nHeadline/Body/CTA")]
+    end
+
+    subgraph API["API Layer"]
+        FASTAPI[("api/main.py\nFastAPI :8000\n/ad /event /profile /health /metrics")]
+    end
+
+    subgraph Evaluation["Evaluation Layer"]
+        EVAL[("scripts/uid_eval.py\nTP/FP/FN from MongoDB vs ground truth")]
+        GT[("data/synthetic_ground_truth.csv\n400 identity pairs")]
+        BATCH_IP[("scripts/batch_reprofile.py\nBatch intent re-profiling")]
+    end
+
+    SG -->|CSV files| PA
+    SG -->|CSV files| PB
+    SG --> PC
+
+    PA -->|JSON events| T1
+    PB -->|JSON events| T2
+
+    T1 --> EC
+    T2 --> EC
+
+    EC --> S3
+    EC --> Q
+
+    Q -->|session accumulation| DET
+    DET -->|deterministic match| MERGER
+    DET -.->|no match fallback| PROB
+    PROB -->|probabilistic match| MERGER
+    MERGER -.->|unmatched| NEW[("New Profile Created")]
+
+    MERGER -->|upsert| MONGO
+    MONGO -->|Change Stream trigger| IP
+
+    IP -->|last_intent_profile| MONGO
+    IP -->|intent string| PM
+    PM <--> QDRANT
+    PM -->|top-5 products| AC
+    AC -->|ad creative| MONGO
+
+    MONGO --> FASTAPI
+    REDIS --> FASTAPI
+
+    EVAL --> GT
+    EVAL --> MONGO
+    BATCH_IP --> MONGO

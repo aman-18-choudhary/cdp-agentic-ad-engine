@@ -1,0 +1,20 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: cdp-consumer-scaler
+  namespace: cdp
+spec:
+  scaleTargetRef:
+    name: cdp-consumer
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  pollingInterval: 15
+  cooldownPeriod: 60
+  triggers:
+    - type: kafka
+      metadata:
+        bootstrapServers: redpanda:9093
+        consumerGroup: cdp-consumer-group
+        topic: cdp-events
+        lagThreshold: "100"
+        offsetResetPolicy: latest

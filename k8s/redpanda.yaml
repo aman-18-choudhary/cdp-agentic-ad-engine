@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: redpanda
+  namespace: cdp
+spec:
+  serviceName: redpanda
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redpanda
+  template:
+    metadata:
+      labels:
+        app: redpanda
+    spec:
+      containers:
+        - name: redpanda
+          image: docker.redpanda.com/redpandadata/redpanda:v23.3.19
+          ports:
+            - containerPort: 9093
+            - containerPort: 9644
+          command:
+            - redpanda
+            - start
+            - --kafka-addr internal://0.0.0.0:9093,external://0.0.0.0:19093
+            - --advertise-kafka-addr internal://redpanda:9093,external://localhost:19093
+            - --mode dev-container
+            - --smp 1
+            - --memory 512M
+          resources:
+            limits:
+              memory: "768Mi"
+              cpu: "500m"
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+          livenessProbe:
+            exec:
+              command:
+                - rpk
+                - cluster
+                - health
+            initialDelaySeconds: 30
+            periodSeconds: 15
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redpanda
+  namespace: cdp
+spec:
+  ports:
+    - name: kafka
+      port: 9093
+      targetPort: 9093
+    - name: admin
+      port: 9644
+      targetPort: 9644
+  selector:
+    app: redpanda

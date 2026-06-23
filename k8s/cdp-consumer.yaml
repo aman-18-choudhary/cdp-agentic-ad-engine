@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdp-consumer
+  namespace: cdp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cdp-consumer
+  template:
+    metadata:
+      labels:
+        app: cdp-consumer
+    spec:
+      containers:
+        - name: consumer
+          image: ghcr.io/{{ .Values.image.registry | default "local" }}/cdp-consumer:{{ .Values.image.tag | default "latest" }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8001
+          envFrom:
+            - configMapRef:
+                name: cdp-config
+          env:
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: redpanda:9093
+            - name: MONGODB_URI
+              value: mongodb://mongodb:27017/cdp?replicaSet=rs0
+            - name: MINIO_ENDPOINT
+              value: minio:9000
+            - name: REDIS_URL
+              value: redis://redis:6379/0
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: "6333"
+            - name: OLLAMA_BASE_URL
+              value: http://ollama:11434
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "250m"
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cdp-consumer
+  namespace: cdp
+spec:
+  ports:
+    - port: 8001
+      targetPort: 8001
+  selector:
+    app: cdp-consumer

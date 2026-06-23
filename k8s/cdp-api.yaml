@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdp-api
+  namespace: cdp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cdp-api
+  template:
+    metadata:
+      labels:
+        app: cdp-api
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/{{ .Values.image.registry | default "local" }}/cdp-api:{{ .Values.image.tag | default "latest" }}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: cdp-config
+          env:
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: redpanda:9093
+            - name: MONGODB_URI
+              value: mongodb://mongodb:27017/cdp?replicaSet=rs0
+            - name: MINIO_ENDPOINT
+              value: minio:9000
+            - name: REDIS_URL
+              value: redis://redis:6379/0
+            - name: QDRANT_HOST
+              value: qdrant
+            - name: QDRANT_PORT
+              value: "6333"
+            - name: OLLAMA_BASE_URL
+              value: http://ollama:11434
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cdp-api
+  namespace: cdp
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8000
+      targetPort: 8000
+  selector:
+    app: cdp-api
