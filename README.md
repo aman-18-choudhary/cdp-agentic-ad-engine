@@ -1,17 +1,6 @@
 # CDP Agentic Ad Engine
 
-A **privacy-centric Customer Data Platform** for cross-platform identity resolution and personalised advertising. Ingests clickstream events from two platforms, resolves anonymous sessions into unified global profiles, extracts purchasing intent via LLM (Ollama), and serves personalised ad creatives.
-
----
-
-## Problem Statement
-
-Users browse across multiple platforms (web, mobile, tablet) without always logging in. Traditional identity resolution relies on third-party cookies or deterministic PII matching, which breaks with privacy regulations (GDPR, CCPA) and blocking.
-
-This system solves it using:
-- **Deterministic matching** — hashed email and device fingerprint (SHA-256)
-- **Probabilistic matching** — weighted signals (IP, location, device, time)
-- **LLM-powered intent profiling** — semantic analysis of browsing behaviour
+A **privacy-centric Customer Data Platform** for cross-platform identity resolution and personalised advertising. Ingests clickstream events from two platforms, resolves anonymous sessions into unified global profiles, extracts purchasing intent via LLM (Ollama), and serves personalised ad creatives — all running on real infrastructure with a live dashboard.
 
 ---
 
@@ -43,31 +32,28 @@ flowchart TB
 
 ---
 
-## Features
+## Quick Start (Demo Pipeline)
 
-### Implemented
+```bash
+# 1. Start infrastructure (Docker)
+docker compose up -d
+# Wait for all services to show "healthy"
 
-- **Cross-platform event ingestion** — Kafka/Redpanda topics per platform, validated against Pydantic schemas
-- **Deterministic identity resolution** — SHA-256 hashed email and device fingerprint matching
-- **Probabilistic identity scoring** — weighted composite of IP range (0.35), city (0.25), device type (0.20), time window (0.20); threshold 0.75
-- **Unified profile store** — MongoDB with embedded event history, devices, locations, session links
-- **LLM intent profiling** — Ollama (`qwen2.5:3b`) generates semantic intent summaries from browsing behaviour
-- **Vector product matching** — Qdrant with `nomic-embed-text` for nearest-neighbour product search
-- **Ad creative generation** — Ollama JSON output mode for personalised headline/body/CTA
-- **FastAPI REST API** — 5 endpoints (`/ad`, `/event`, `/profile`, `/health`, `/metrics`) with Redis caching and rate limiting
-- **Raw event data lake** — MinIO (S3-compatible) for partitioned JSONL storage
-- **Docker Compose orchestration** — 7 services for local development
-- **Kubernetes deployment** — Manifests for all components with KEDA autoscaling
-- **CI/CD pipeline** — GitHub Actions (lint → test → build → deploy → drift-check)
+# 2. Set up Python
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r backend/requirements.txt
 
-### Not Implemented (Future)
+# 3. Run the full demo
+./backend/scripts/demo.sh
+```
 
-- Authentication/authorization on API endpoints
-- GDPR data deletion / user opt-out API
-- End-to-end integration test suite
-- A/B testing framework for ad creative variants
-- Monitoring/alerting integration
-- Multi-region high-availability deployment
+The demo script walks through each step with narration pauses: reset → prepare data → embed catalog → start consumer → start API → run producers → batch reprofile → show results.
+
+To start the frontend dashboard:
+
+```bash
+cd frontend && npm run dev
+```
 
 ---
 
@@ -76,6 +62,7 @@ flowchart TB
 | Layer | Technology |
 |-------|-----------|
 | Language | Python 3.12+ |
+| Frontend | React + TypeScript + Vite |
 | Event streaming | Redpanda (Kafka API) |
 | Database | MongoDB 7.0 |
 | Vector store | Qdrant 1.10 |
@@ -95,56 +82,64 @@ flowchart TB
 
 ```
 .
-├── agents/                   # AI agents (IntentProfiler, ProductMatcher, AdCreative)
-│   ├── ad_creative.py
-│   ├── intent_profiler.py
-│   └── product_matcher.py
-├── api/
-│   └── main.py               # FastAPI application (5 endpoints)
-├── common/
-│   ├── logging.py            # Structured logging (structlog)
-│   ├── schemas.py            # Pydantic v2 data models
-│   └── settings.py           # Ollama model configuration
-├── consumers/
-│   └── event_consumer.py     # Kafka consumer + MinIO archiver + UID queue
-├── data/                     # Synthetic data (CSV, ground truth, product catalog)
-├── docs/                     # Documentation
-├── evidence/                 # Real-execution screenshots
-├── infra/                    # Terraform infrastructure
-├── k8s/                      # Kubernetes manifests
-├── scripts/
-│   ├── batch_reprofile.py    # Batch intent re-profiling
-│   ├── prepare_data.py       # Synthetic data generator
-│   └── uid_eval.py           # UID engine accuracy evaluation
-├── simulators/
-│   ├── platform_a_producer.py
-│   └── platform_b_producer.py
-├── tests/
-│   ├── test_agents.py        # 19 tests
-│   ├── test_api.py           # 4 tests
-│   └── test_uid_engine.py    # 20 tests
-├── uid_engine/
-│   ├── deterministic.py      # Email + device fingerprint matching
-│   ├── evaluate.py           # Evaluation framework (threshold 0.85 F1)
-│   ├── merger.py             # MongoDB profile CRUD + Change Stream
-│   └── probabilistic.py      # Weighted scoring (IP/city/device/time)
-├── vector_store/
-│   └── embed_catalog.py      # Qdrant product embedding
+├── backend/
+│   ├── agents/                   # AI agents (IntentProfiler, ProductMatcher, AdCreative)
+│   │   ├── ad_creative.py
+│   │   ├── intent_profiler.py
+│   │   └── product_matcher.py
+│   ├── api/
+│   │   └── main.py               # FastAPI (5 endpoints: /ad, /event, /profile, /health, /metrics)
+│   ├── common/
+│   │   ├── logging.py            # Structured logging (structlog)
+│   │   ├── schemas.py            # Pydantic v2 data models
+│   │   └── settings.py           # Ollama model configuration
+│   ├── consumers/
+│   │   └── event_consumer.py     # Kafka consumer + MinIO archiver + UID queue
+│   ├── data/                     # Synthetic data (CSV, product catalog)
+│   ├── scripts/
+│   │   ├── demo.sh               # One-command demo pipeline
+│   │   ├── reset.py              # Drops MongoDB collections for fresh start
+│   │   ├── prepare_data.py       # Synthetic data generator (18K events, 400 overlapping pairs)
+│   │   ├── batch_reprofile.py    # Batch LLM intent re-profiling (--limit, --concurrency)
+│   │   ├── profile_audit.py      # Profile-level audit against ground truth
+│   │   └── uid_eval.py           # UID engine accuracy evaluation
+│   ├── simulators/
+│   │   ├── platform_a_producer.py
+│   │   └── platform_b_producer.py
+│   ├── tests/
+│   │   ├── test_agents.py
+│   │   ├── test_api.py
+│   │   └── test_uid_engine.py
+│   ├── uid_engine/
+│   │   ├── deterministic.py      # SHA-256 email + device fingerprint matching
+│   │   ├── evaluate.py           # Evaluation framework
+│   │   ├── merger.py             # MongoDB profile CRUD + change stream
+│   │   └── probabilistic.py      # Weighted scoring (IP/city/device/time)
+│   ├── vector_store/
+│   │   └── embed_catalog.py      # Qdrant product embedding
+│   ├── Dockerfile
+│   ├── pyproject.toml
+│   └── requirements.txt
+├── frontend/                     # React dashboard (LiveFeed, Profiles, IdentityExplorer, AdStudio, Analytics)
+├── docs/
+├── evidence/
+├── infra/                        # Terraform infrastructure
+├── k8s/                          # Kubernetes manifests
+├── .env                          # Ollama config (127.0.0.1:11434, qwen2.5:3b)
 ├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── pyproject.toml
+└── README.md
 ```
 
 ---
 
-## Setup Instructions
+## Detailed Setup
 
 ### Prerequisites
 
 - Docker Desktop (or Docker + Docker Compose)
 - Python 3.12+
-- Ollama (optional, for local LLM — Docker service handles this)
+- [Ollama](https://ollama.com) for local LLM inference
+- Node.js 18+ (for frontend)
 
 ### 1. Start Infrastructure
 
@@ -152,80 +147,142 @@ flowchart TB
 docker compose up -d
 ```
 
-This starts: Redpanda (Kafka), MongoDB, Qdrant, MinIO, Redis, Ollama.
-
-Wait for all services to show `healthy`:
+Wait for healthy:
 
 ```bash
 docker ps --format "table {{.Names}}\t{{.Status}}"
 ```
 
-### 2. Set Up Python Environment
+### 2. Pull LLM Models (Host Ollama)
+
+```bash
+ollama pull qwen2.5:3b
+ollama pull nomic-embed-text
+```
+
+### 3. Set Up Python
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-pip install python-snappy    # Required for Redpanda compression
+pip install -r backend/requirements.txt
 ```
 
-On macOS, set library path:
+On macOS, set library path for `python-snappy`:
 
 ```bash
 export DYLD_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_LIBRARY_PATH
 ```
 
-### 3. Generate Synthetic Data
+### 4. Generate Synthetic Data
 
 ```bash
-python scripts/prepare_data.py --seed 42
+python backend/scripts/prepare_data.py --seed 42
 ```
 
-Creates: `data/platform_a_events.csv`, `data/platform_b_events.csv`, `data/synthetic_ground_truth.csv`, `data/product_catalog.json`
+Creates: `backend/data/platform_a_events.csv`, `backend/data/platform_b_events.csv`, `backend/data/synthetic_ground_truth.csv`, `backend/data/product_catalog.json`
 
-### 4. Embed Product Catalog (Qdrant)
+### 5. Embed Product Catalog
 
 ```bash
-python vector_store/embed_catalog.py
+python backend/vector_store/embed_catalog.py
+```
+
+### 6. Start Frontend (Optional)
+
+```bash
+cd frontend && npm install && npm run dev
 ```
 
 ---
 
-## Running the System
+## Demo Pipeline (detail)
 
-### Step 1 — Produce Events
+The demo script (`backend/scripts/demo.sh`) runs these steps with pauses for narration:
 
-```bash
-# Terminal 1: Platform A producer
-python simulators/platform_a_producer.py --max-events 5000
+| Step | Script | What Happens |
+|------|--------|-------------|
+| 1 | `reset.py` | Drops `raw_events` and `unified_profiles` MongoDB collections |
+| 2 | `prepare_data.py` | Generates 18,210 synthetic events with 400 cross-platform session pairs |
+| 3 | `embed_catalog.py` | Embeds product catalog into Qdrant vector store |
+| 4 | `event_consumer.py` | Starts consumer (reads Redpanda → MongoDB → UID engine) |
+| 5 | API (`uvicorn`) | Starts FastAPI server on port 8000 |
+| 6 | Platform producers | Sends 10,000 events to each Redpanda topic |
+| 7 | `batch_reprofile.py` | Generates LLM intent profiles (limit 10, concurrency 4) |
+| 8 | Results | Shows intent profiles and ad creative examples |
 
-# Terminal 2: Platform B producer
-python simulators/platform_b_producer.py --max-events 5000
+---
+
+## API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/ad/{global_uid}` | GET | Generate personalised ad creative for a profile |
+| `/event` | POST | Ingest a raw event directly |
+| `/profile/{global_uid}` | GET | Retrieve unified profile with sessions and events |
+| `/health` | GET | Service health check (MongoDB, Qdrant, Redpanda, Ollama) |
+| `/metrics` | GET | Prometheus-formatted metrics |
+
+### Ad Generation
+
+The `/ad/{uid}` endpoint:
+1. Looks up the unified profile by Global UID
+2. Uses LLM intent (if available) or falls back to behavioral signals (views, cart adds, purchases)
+3. Searches Qdrant for relevant products via vector similarity
+4. Generates personalised ad creative (headline, body, CTA) via Ollama
+5. Caches result in Redis (5-minute TTL)
+
+### Profile Response Example
+
+```json
+{
+  "global_uid": "40295f04-6d85-5f9b-8324-01fa98794798",
+  "sessions": ["sess_a_42", "sess_b_42"],
+  "events": [
+    { "type": "page_view", "product_id": "prod_0145", "platform": "platform_a" },
+    { "type": "add_to_cart", "product_id": "prod_0197", "platform": "platform_b" }
+  ],
+  "devices": ["mobile", "desktop"],
+  "locations": ["New York, US"],
+  "last_intent": "The user is researching footwear, specifically in the $410.93 price range.",
+  "intent_updated_at": "2026-06-24T04:23:17.123456"
+}
 ```
 
-### Step 2 — Start Event Consumer
+---
 
-```bash
-DYLD_LIBRARY_PATH=/opt/homebrew/lib python consumers/event_consumer.py
-```
+## Results
 
-### Step 3 — Batch Profile (Intent Profiling)
+### UID Engine Evaluation (400 ground-truth pairs)
 
-```bash
-python scripts/batch_reprofile.py --concurrency 5
-```
+| Metric | Deterministic | Probabilistic | Combined |
+|--------|:------------:|:-------------:|:--------:|
+| True Positives | 161 | 152 | 313 |
+| False Positives | 180,037 | 0 | 180,037 |
+| False Negatives | 39 | 48 | 87 |
+| Precision | 0.0009 | 1.0000 | 0.0017 |
+| Recall | 0.8050 | 0.7600 | 0.7825 |
+| F1 Score | 0.0018 | **0.8636** | 0.0035 |
 
-### Step 4 — Run Evaluation
+### Profile-Level Audit
 
-```bash
-python scripts/uid_eval.py
-```
+| Metric | Value |
+|--------|-------|
+| Correct profiles | 92 |
+| Over-merged profiles | 24 (all device_fingerprint) |
+| Split identities | 87 |
+| Profile precision | 0.7931 |
+| Profile recall | 0.5140 |
+| Profile F1 | 0.6237 |
 
-### Step 5 — Start API Server
+### Key Findings
 
-```bash
-uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
-```
+- **Probabilistic matching achieved 0 false positives** — zero over-merges from scoring
+- **100% of over-merges** caused by device fingerprint collisions in synthetic data (26 fingerprints for 4,807 sessions)
+- **Intent profiling completed for 689 of 694 profiles** (99.3% success rate)
+- **54,669 real events** consumed through the live pipeline
+- **Batch reprofile** processes profiles at ~8.5s each with `qwen2.5:3b` at concurrency 4
+- **Ad endpoint** returns real LLM-generated creative for every UID (product-aware even when intent is missing)
 
 ---
 
@@ -244,49 +301,28 @@ Real-execution screenshots of the live running system:
 
 ---
 
-## Results
+## Environment Configuration
 
-### UID Engine Evaluation (400 ground-truth pairs)
+The `.env` file controls Ollama connectivity:
 
-| Metric | Deterministic | Probabilistic | Combined |
-|--------|:------------:|:-------------:|:--------:|
-| True Positives | 161 | 152 | 313 |
-| False Positives | 180,037 | 0 | 180,037 |
-| False Negatives | 39 | 48 | 87 |
-| Precision | 0.0009 | 1.0000 | 0.0017 |
-| Recall | 0.8050 | 0.7600 | 0.7825 |
-| F1 Score | 0.0018 | 0.8636 | 0.0035 |
+| Variable | Value | Notes |
+|----------|-------|-------|
+| `OLLAMA_BASE_URL` | `http://127.0.0.1:11434` | IPv4 to avoid Docker Ollama proxy |
+| `OLLAMA_CHAT_MODEL` | `qwen2.5:3b` | Chat model for intent + ad generation |
+| `OLLAMA_EMBED_MODEL` | `nomic-embed-text` | Embedding model for vector search |
 
-### Profile-Level Audit
-
-| Metric | Value |
-|--------|-------|
-| Correct profiles | 92 |
-| Over-merged profiles | 24 (all device_fingerprint) |
-| Split identities | 87 |
-| Profile precision | 0.7931 |
-| Profile recall | 0.5140 |
-| Profile F1 | 0.6237 |
-
-### Key Findings
-
-- **100% of over-merges** caused by device fingerprint collisions in synthetic data (26 fingerprints for 4,807 sessions)
-- **Probabilistic matching achieved 0 false positives** — zero over-merges from scoring
-- **Intent profiling completed for 689 of 694 profiles** (99.3% success rate)
-- **54,669 real events** consumed through the live pipeline
+Two Ollama instances may coexist: host (IPv4, port 11434) and Docker `cdp-ollama` (IPv6). All connections use `127.0.0.1` to hit the host instance.
 
 ---
 
-## Future Improvements
+## Not Implemented (Future)
 
-- Production-grade device fingerprint with user agent parsing + browser feature detection
-- Configurable matching pipeline order (deterministic first vs. parallel)
-- Dedicated profile-level evaluation (avoid pair-level combinatorial inflation)
-- Authentication/authorization for API endpoints
-- GDPR compliance endpoints (data access, deletion, opt-out)
+- Authentication/authorization on API endpoints
+- GDPR data deletion / user opt-out API
 - End-to-end integration test suite
-- Real-time monitoring with Prometheus/Grafana
 - A/B testing framework for ad creative variants
+- Monitoring/alerting (Prometheus/Grafana)
+- Multi-region high-availability deployment
 
 ---
 
