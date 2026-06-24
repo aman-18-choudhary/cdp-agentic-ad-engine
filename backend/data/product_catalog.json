@@ -1,0 +1,6086 @@
+[
+  {
+    "product_id": "prod_0295",
+    "name": "Elite Stick Vacuum Cleaner",
+    "category": "home_appliances",
+    "description": "elite version of the popular stick vacuum cleaner with enhanced features.",
+    "price": 480.37,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0427",
+    "name": "Deluxe Hyaluronic Acid Toner",
+    "category": "beauty",
+    "description": "deluxe version of the popular hyaluronic acid toner with enhanced features.",
+    "price": 268.93,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0502",
+    "name": "Essential Sun Shade",
+    "category": "automotive_accessories",
+    "description": "essential version of the popular sun shade with enhanced features.",
+    "price": 249.62,
+    "tags": [
+      "portable",
+      "vacuum",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0346",
+    "name": "G\u00f6del Escher Bach",
+    "category": "books",
+    "description": "An eternal golden braid by Douglas Hofstadter.",
+    "price": 19.92,
+    "tags": [
+      "philosophy",
+      "math",
+      "art"
+    ]
+  },
+  {
+    "product_id": "prod_0478",
+    "name": "Car Emergency Kit",
+    "category": "automotive_accessories",
+    "description": "37-piece car emergency kit with jumper cables, first aid, and tools.",
+    "price": 36.09,
+    "tags": [
+      "emergency",
+      "kit",
+      "safety"
+    ]
+  },
+  {
+    "product_id": "prod_0040",
+    "name": "Smart Thermostat",
+    "category": "electronics",
+    "description": "WiFi smart thermostat with learning algorithm and energy reports.",
+    "price": 129.91,
+    "tags": [
+      "thermostat",
+      "smart",
+      "energy"
+    ]
+  },
+  {
+    "product_id": "prod_0307",
+    "name": "Deluxe Ice Maker",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular ice maker with enhanced features.",
+    "price": 321.33,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0135",
+    "name": "Canvas Sneakers",
+    "category": "footwear",
+    "description": "Classic canvas sneakers with vulcanized sole and metal eyelets.",
+    "price": 44.53,
+    "tags": [
+      "sneakers",
+      "canvas",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0324",
+    "name": "Deluxe Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular dehumidifier 50pt with enhanced features.",
+    "price": 47.79,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0456",
+    "name": "Premium Concealer Full Coverage",
+    "category": "beauty",
+    "description": "premium version of the popular concealer full coverage with enhanced features.",
+    "price": 90.32,
+    "tags": [
+      "skincare",
+      "vitaminc",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0196",
+    "name": "Elite Loafers",
+    "category": "footwear",
+    "description": "elite version of the popular loafers with enhanced features.",
+    "price": 272.5,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0120",
+    "name": "Satin Shirt",
+    "category": "clothing",
+    "description": "Satin button-up shirt with self-tie neck and mother-of-pearl buttons.",
+    "price": 81.6,
+    "tags": [
+      "shirt",
+      "satin",
+      "luxury"
+    ]
+  },
+  {
+    "product_id": "prod_0314",
+    "name": "Premium Mini Fridge",
+    "category": "home_appliances",
+    "description": "premium version of the popular mini fridge with enhanced features.",
+    "price": 285.79,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0272",
+    "name": "Waffle Maker",
+    "category": "home_appliances",
+    "description": "Belgian waffle maker with non-stick plates and indicator lights.",
+    "price": 30.7,
+    "tags": [
+      "waffle",
+      "maker",
+      "breakfast"
+    ]
+  },
+  {
+    "product_id": "prod_0103",
+    "name": "Graphic T-Shirt",
+    "category": "clothing",
+    "description": "Soft graphic t-shirt with vintage print and relaxed fit.",
+    "price": 23.7,
+    "tags": [
+      "tshirt",
+      "graphic",
+      "vintage"
+    ]
+  },
+  {
+    "product_id": "prod_0431",
+    "name": "Elite Perfume Eau de Parfum",
+    "category": "beauty",
+    "description": "elite version of the popular perfume eau de parfum with enhanced features.",
+    "price": 363.0,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0159",
+    "name": "Compact Loafers",
+    "category": "footwear",
+    "description": "compact version of the popular loafers with enhanced features.",
+    "price": 276.25,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0327",
+    "name": "Pro Electric Blanket",
+    "category": "home_appliances",
+    "description": "pro version of the popular electric blanket with enhanced features.",
+    "price": 30.57,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0406",
+    "name": "Beard Oil Kit",
+    "category": "beauty",
+    "description": "All-natural beard oil kit with jojoba, argan, and sandalwood scents.",
+    "price": 21.82,
+    "tags": [
+      "beard",
+      "oil",
+      "grooming"
+    ]
+  },
+  {
+    "product_id": "prod_0224",
+    "name": "Deluxe Resistance Bands Set",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular resistance bands set with enhanced features.",
+    "price": 56.96,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0414",
+    "name": "Body Lotion",
+    "category": "beauty",
+    "description": "Shea butter body lotion with cocoa butter and vitamin E for all-day moisture.",
+    "price": 13.24,
+    "tags": [
+      "lotion",
+      "body",
+      "shea"
+    ]
+  },
+  {
+    "product_id": "prod_0375",
+    "name": "Pro The Great Gatsby",
+    "category": "books",
+    "description": "pro version of the popular the great gatsby with enhanced features.",
+    "price": 112.22,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0385",
+    "name": "Deluxe Sapiens",
+    "category": "books",
+    "description": "deluxe version of the popular sapiens with enhanced features.",
+    "price": 234.67,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0458",
+    "name": "Car Vacuum Cleaner",
+    "category": "automotive_accessories",
+    "description": "Portable hand vacuum with 8000Pa suction, HEPA filter, and crevice tool.",
+    "price": 44.91,
+    "tags": [
+      "vacuum",
+      "car",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0501",
+    "name": "Pro Side Window Visors",
+    "category": "automotive_accessories",
+    "description": "pro version of the popular side window visors with enhanced features.",
+    "price": 329.43,
+    "tags": [
+      "vacuum",
+      "car",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0449",
+    "name": "Premium Beard Oil Kit",
+    "category": "beauty",
+    "description": "premium version of the popular beard oil kit with enhanced features.",
+    "price": 22.94,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0239",
+    "name": "Pro Adjustable Dumbbells",
+    "category": "sports_gear",
+    "description": "pro version of the popular adjustable dumbbells with enhanced features.",
+    "price": 21.64,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0182",
+    "name": "Essential Slip-On Sneakers",
+    "category": "footwear",
+    "description": "essential version of the popular slip-on sneakers with enhanced features.",
+    "price": 395.35,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0258",
+    "name": "Pro Yoga Mat Premium",
+    "category": "sports_gear",
+    "description": "pro version of the popular yoga mat premium with enhanced features.",
+    "price": 46.82,
+    "tags": [
+      "fitness",
+      "mat",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0364",
+    "name": "Compact The Cathedral and the Bazaar",
+    "category": "books",
+    "description": "compact version of the popular the cathedral and the bazaar with enhanced features.",
+    "price": 339.95,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0153",
+    "name": "Premium Basketball Shoes",
+    "category": "footwear",
+    "description": "premium version of the popular basketball shoes with enhanced features.",
+    "price": 410.93,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0056",
+    "name": "Essential Oil Diffuser",
+    "category": "electronics",
+    "description": "Ultrasonic essential oil diffuser with LED mood light and auto shut-off.",
+    "price": 23.38,
+    "tags": [
+      "diffuser",
+      "oil",
+      "aroma"
+    ]
+  },
+  {
+    "product_id": "prod_0498",
+    "name": "Pro Car Air Purifier",
+    "category": "automotive_accessories",
+    "description": "pro version of the popular car air purifier with enhanced features.",
+    "price": 276.4,
+    "tags": [
+      "vacuum",
+      "portable",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0204",
+    "name": "Ab Roller Wheel",
+    "category": "sports_gear",
+    "description": "Ab roller wheel with knee pad and ergonomic handles.",
+    "price": 11.71,
+    "tags": [
+      "ab",
+      "roller",
+      "core"
+    ]
+  },
+  {
+    "product_id": "prod_0290",
+    "name": "Compact Rice Cooker",
+    "category": "home_appliances",
+    "description": "compact version of the popular rice cooker with enhanced features.",
+    "price": 437.2,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0301",
+    "name": "Pro Stick Vacuum Cleaner",
+    "category": "home_appliances",
+    "description": "pro version of the popular stick vacuum cleaner with enhanced features.",
+    "price": 247.3,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0213",
+    "name": "Water Bottle 32oz",
+    "category": "sports_gear",
+    "description": "Insulated stainless steel water bottle with straw lid and handle.",
+    "price": 36.49,
+    "tags": [
+      "bottle",
+      "water",
+      "insulated"
+    ]
+  },
+  {
+    "product_id": "prod_0325",
+    "name": "Elite Coffee Grinder",
+    "category": "home_appliances",
+    "description": "elite version of the popular coffee grinder with enhanced features.",
+    "price": 108.47,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0171",
+    "name": "Premium Basketball Shoes",
+    "category": "footwear",
+    "description": "premium version of the popular basketball shoes with enhanced features.",
+    "price": 471.44,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0384",
+    "name": "Essential The Great Gatsby",
+    "category": "books",
+    "description": "essential version of the popular the great gatsby with enhanced features.",
+    "price": 230.55,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0369",
+    "name": "Premium G\u00f6del Escher Bach",
+    "category": "books",
+    "description": "premium version of the popular g\u00f6del escher bach with enhanced features.",
+    "price": 48.16,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0291",
+    "name": "Essential Cordless Iron",
+    "category": "home_appliances",
+    "description": "essential version of the popular cordless iron with enhanced features.",
+    "price": 285.54,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0326",
+    "name": "Deluxe Ice Maker",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular ice maker with enhanced features.",
+    "price": 421.07,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0205",
+    "name": "Push-Up Bars",
+    "category": "sports_gear",
+    "description": "Parallel push-up bars with foam grips and anti-skid base.",
+    "price": 16.71,
+    "tags": [
+      "pushup",
+      "bars",
+      "chest"
+    ]
+  },
+  {
+    "product_id": "prod_0361",
+    "name": "Elite The Pragmatic Programmer",
+    "category": "books",
+    "description": "elite version of the popular the pragmatic programmer with enhanced features.",
+    "price": 83.65,
+    "tags": [
+      "software",
+      "craft",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0249",
+    "name": "Deluxe Foam Roller",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular foam roller with enhanced features.",
+    "price": 411.24,
+    "tags": [
+      "fitness",
+      "mat",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0476",
+    "name": "USB Car Charger",
+    "category": "automotive_accessories",
+    "description": "Dual USB-C car charger with 45W PD fast charging and voltmeter display.",
+    "price": 18.77,
+    "tags": [
+      "charger",
+      "usb",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0402",
+    "name": "Eye Shadow Palette",
+    "category": "beauty",
+    "description": "18-shade eye shadow palette with matte, shimmer, and glitter finishes.",
+    "price": 28.93,
+    "tags": [
+      "eyeshadow",
+      "palette",
+      "makeup"
+    ]
+  },
+  {
+    "product_id": "prod_0485",
+    "name": "Elite Steering Wheel Cover",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular steering wheel cover with enhanced features.",
+    "price": 245.26,
+    "tags": [
+      "vacuum",
+      "car",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0166",
+    "name": "Elite Dress Oxfords",
+    "category": "footwear",
+    "description": "elite version of the popular dress oxfords with enhanced features.",
+    "price": 497.19,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0422",
+    "name": "Deluxe Heat Protectant Spray",
+    "category": "beauty",
+    "description": "deluxe version of the popular heat protectant spray with enhanced features.",
+    "price": 480.02,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0316",
+    "name": "Premium Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "premium version of the popular dehumidifier 50pt with enhanced features.",
+    "price": 488.41,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0085",
+    "name": "Swim Trunks",
+    "category": "clothing",
+    "description": "Quick-dry swim trunks with mesh lining and drawstring closure.",
+    "price": 35.99,
+    "tags": [
+      "swim",
+      "trunks",
+      "beach"
+    ]
+  },
+  {
+    "product_id": "prod_0481",
+    "name": "Magnetic Phone Holder",
+    "category": "automotive_accessories",
+    "description": "Strong magnetic phone holder for car dashboard with ultra-thin plate.",
+    "price": 14.69,
+    "tags": [
+      "magnetic",
+      "holder",
+      "phone"
+    ]
+  },
+  {
+    "product_id": "prod_0490",
+    "name": "Elite Tire Pressure Monitor",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular tire pressure monitor with enhanced features.",
+    "price": 143.77,
+    "tags": [
+      "portable",
+      "vacuum",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0400",
+    "name": "Eyelash Curler",
+    "category": "beauty",
+    "description": "Professional eyelash curler with silicone pad and ergonomic handle.",
+    "price": 8.42,
+    "tags": [
+      "eyelash",
+      "curler",
+      "makeup"
+    ]
+  },
+  {
+    "product_id": "prod_0134",
+    "name": "Hiking Boots",
+    "category": "footwear",
+    "description": "Waterproof hiking boots with Vibram sole and ankle support.",
+    "price": 169.45,
+    "tags": [
+      "hiking",
+      "boots",
+      "waterproof"
+    ]
+  },
+  {
+    "product_id": "prod_0029",
+    "name": "E-Reader 6in",
+    "category": "electronics",
+    "description": "6-inch e-reader with adjustable warm light and weeks-long battery.",
+    "price": 129.68,
+    "tags": [
+      "ereader",
+      "ebook",
+      "reading"
+    ]
+  },
+  {
+    "product_id": "prod_0480",
+    "name": "Side Window Visors",
+    "category": "automotive_accessories",
+    "description": "In-channel side window visors for rain protection and ventilation.",
+    "price": 40.75,
+    "tags": [
+      "visors",
+      "window",
+      "rain"
+    ]
+  },
+  {
+    "product_id": "prod_0429",
+    "name": "Premium Nail Polish Set",
+    "category": "beauty",
+    "description": "premium version of the popular nail polish set with enhanced features.",
+    "price": 173.75,
+    "tags": [
+      "skincare",
+      "vitaminc",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0132",
+    "name": "Elite Corduroy Pants",
+    "category": "clothing",
+    "description": "elite version of the popular corduroy pants with enhanced features.",
+    "price": 287.45,
+    "tags": [
+      "jacket",
+      "casual",
+      "denim"
+    ]
+  },
+  {
+    "product_id": "prod_0200",
+    "name": "Resistance Bands Set",
+    "category": "sports_gear",
+    "description": "Set of 5 resistance bands with different tensions and door anchor.",
+    "price": 25.96,
+    "tags": [
+      "bands",
+      "resistance",
+      "exercise"
+    ]
+  },
+  {
+    "product_id": "prod_0110",
+    "name": "Base Layer Top",
+    "category": "clothing",
+    "description": "Merino wool base layer top with flatlock seams and tagless label.",
+    "price": 71.77,
+    "tags": [
+      "base",
+      "layer",
+      "merino"
+    ]
+  },
+  {
+    "product_id": "prod_0380",
+    "name": "Premium The Great Gatsby",
+    "category": "books",
+    "description": "premium version of the popular the great gatsby with enhanced features.",
+    "price": 486.3,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0033",
+    "name": "VR Headset",
+    "category": "electronics",
+    "description": "Standalone VR headset with 4K display and 6DOF controllers.",
+    "price": 400.91,
+    "tags": [
+      "vr",
+      "headset",
+      "gaming"
+    ]
+  },
+  {
+    "product_id": "prod_0461",
+    "name": "Dash Camera",
+    "category": "automotive_accessories",
+    "description": "1080p dash cam with wide angle, night vision, and loop recording.",
+    "price": 48.72,
+    "tags": [
+      "dashcam",
+      "camera",
+      "safety"
+    ]
+  },
+  {
+    "product_id": "prod_0225",
+    "name": "Deluxe Weight Bench",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular weight bench with enhanced features.",
+    "price": 223.94,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0505",
+    "name": "Compact Car Air Purifier",
+    "category": "automotive_accessories",
+    "description": "compact version of the popular car air purifier with enhanced features.",
+    "price": 180.03,
+    "tags": [
+      "vacuum",
+      "portable",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0393",
+    "name": "Vitamin C Serum",
+    "category": "beauty",
+    "description": "20% Vitamin C serum with hyaluronic acid and vitamin E for brightening.",
+    "price": 24.86,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0426",
+    "name": "Compact Exfoliating Scrub",
+    "category": "beauty",
+    "description": "compact version of the popular exfoliating scrub with enhanced features.",
+    "price": 275.25,
+    "tags": [
+      "vitaminc",
+      "skincare",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0100",
+    "name": "Dress Pants",
+    "category": "clothing",
+    "description": "Wrinkle-resistant dress pants with flat front and concealed closure.",
+    "price": 78.49,
+    "tags": [
+      "pants",
+      "dress",
+      "formal"
+    ]
+  },
+  {
+    "product_id": "prod_0148",
+    "name": "Essential Chelsea Boots",
+    "category": "footwear",
+    "description": "essential version of the popular chelsea boots with enhanced features.",
+    "price": 306.24,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0187",
+    "name": "Deluxe Loafers",
+    "category": "footwear",
+    "description": "deluxe version of the popular loafers with enhanced features.",
+    "price": 474.72,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0424",
+    "name": "Essential Micellar Water",
+    "category": "beauty",
+    "description": "essential version of the popular micellar water with enhanced features.",
+    "price": 229.44,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0070",
+    "name": "Slim Fit Chinos",
+    "category": "clothing",
+    "description": "Stretch cotton chino pants with slim fit and tapered leg.",
+    "price": 55.65,
+    "tags": [
+      "pants",
+      "chinos",
+      "slim"
+    ]
+  },
+  {
+    "product_id": "prod_0488",
+    "name": "Premium Steering Wheel Cover",
+    "category": "automotive_accessories",
+    "description": "premium version of the popular steering wheel cover with enhanced features.",
+    "price": 58.95,
+    "tags": [
+      "vacuum",
+      "portable",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0281",
+    "name": "Electric Can Opener",
+    "category": "home_appliances",
+    "description": "One-touch electric can opener with magnetic lid holder and blade cutting.",
+    "price": 19.52,
+    "tags": [
+      "opener",
+      "can",
+      "electric"
+    ]
+  },
+  {
+    "product_id": "prod_0410",
+    "name": "Lipstick Matte",
+    "category": "beauty",
+    "description": "Long-wear matte lipstick with 8hr color stay and vitamin E.",
+    "price": 16.5,
+    "tags": [
+      "lipstick",
+      "matte",
+      "longwear"
+    ]
+  },
+  {
+    "product_id": "prod_0368",
+    "name": "Deluxe Clean Code",
+    "category": "books",
+    "description": "deluxe version of the popular clean code with enhanced features.",
+    "price": 131.14,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0483",
+    "name": "Pro Car Air Purifier",
+    "category": "automotive_accessories",
+    "description": "pro version of the popular car air purifier with enhanced features.",
+    "price": 90.2,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0064",
+    "name": "Air Fryer 5.8qt",
+    "category": "electronics",
+    "description": "5.8qt air fryer with 8 presets, digital touchscreen, and rapid air circulation.",
+    "price": 88.57,
+    "tags": [
+      "airfryer",
+      "fryer",
+      "healthy"
+    ]
+  },
+  {
+    "product_id": "prod_0022",
+    "name": "Portable Projector",
+    "category": "electronics",
+    "description": "Mini portable projector with 1080p support, built-in battery, and WiFi.",
+    "price": 301.23,
+    "tags": [
+      "projector",
+      "portable",
+      "mini"
+    ]
+  },
+  {
+    "product_id": "prod_0256",
+    "name": "Elite Weight Bench",
+    "category": "sports_gear",
+    "description": "elite version of the popular weight bench with enhanced features.",
+    "price": 420.21,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0288",
+    "name": "Premium Humidifier 2.5L",
+    "category": "home_appliances",
+    "description": "premium version of the popular humidifier 2.5l with enhanced features.",
+    "price": 104.31,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0198",
+    "name": "Yoga Mat Premium",
+    "category": "sports_gear",
+    "description": "6mm thick yoga mat with alignment lines and non-slip surface.",
+    "price": 39.77,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0076",
+    "name": "Puffer Vest",
+    "category": "clothing",
+    "description": "Lightweight puffer vest with baffle stitching and zip pockets.",
+    "price": 71.55,
+    "tags": [
+      "vest",
+      "puffer",
+      "insulated"
+    ]
+  },
+  {
+    "product_id": "prod_0460",
+    "name": "Steering Wheel Cover",
+    "category": "automotive_accessories",
+    "description": "Microfiber steering wheel cover with non-slip grip and stitched design.",
+    "price": 20.99,
+    "tags": [
+      "steering",
+      "cover",
+      "wheel"
+    ]
+  },
+  {
+    "product_id": "prod_0006",
+    "name": "Smart Home Speaker",
+    "category": "electronics",
+    "description": "Voice-controlled smart speaker with room-filling sound and multi-room support.",
+    "price": 89.26,
+    "tags": [
+      "smart",
+      "speaker",
+      "voice"
+    ]
+  },
+  {
+    "product_id": "prod_0331",
+    "name": "Introduction to Algorithms",
+    "category": "books",
+    "description": "Comprehensive algorithms reference by CLRS, 4th edition.",
+    "price": 89.16,
+    "tags": [
+      "algorithms",
+      "textbook",
+      "cs"
+    ]
+  },
+  {
+    "product_id": "prod_0250",
+    "name": "Essential Adjustable Dumbbells",
+    "category": "sports_gear",
+    "description": "essential version of the popular adjustable dumbbells with enhanced features.",
+    "price": 430.24,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0411",
+    "name": "Concealer Full Coverage",
+    "category": "beauty",
+    "description": "Full-coverage liquid concealer with buildable formula and crease-proof finish.",
+    "price": 13.83,
+    "tags": [
+      "concealer",
+      "coverage",
+      "liquid"
+    ]
+  },
+  {
+    "product_id": "prod_0218",
+    "name": "Elite Adjustable Dumbbells",
+    "category": "sports_gear",
+    "description": "elite version of the popular adjustable dumbbells with enhanced features.",
+    "price": 384.64,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0055",
+    "name": "Air Purifier",
+    "category": "electronics",
+    "description": "HEPA air purifier for rooms up to 300sqft with auto mode and quiet fan.",
+    "price": 121.68,
+    "tags": [
+      "purifier",
+      "air",
+      "hepa"
+    ]
+  },
+  {
+    "product_id": "prod_0351",
+    "name": "Premium To Kill a Mockingbird",
+    "category": "books",
+    "description": "premium version of the popular to kill a mockingbird with enhanced features.",
+    "price": 205.45,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0289",
+    "name": "Elite Tower Fan",
+    "category": "home_appliances",
+    "description": "elite version of the popular tower fan with enhanced features.",
+    "price": 320.64,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0088",
+    "name": "Knit Beanie",
+    "category": "clothing",
+    "description": "Chunky knit beanie hat with fold-up brim and pom-pom.",
+    "price": 19.03,
+    "tags": [
+      "hat",
+      "beanie",
+      "winter"
+    ]
+  },
+  {
+    "product_id": "prod_0433",
+    "name": "Compact Straightening Brush",
+    "category": "beauty",
+    "description": "compact version of the popular straightening brush with enhanced features.",
+    "price": 147.23,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0031",
+    "name": "Router WiFi 6",
+    "category": "electronics",
+    "description": "Dual-band WiFi 6 router with 4 Gigabit ports and mesh support.",
+    "price": 148.44,
+    "tags": [
+      "router",
+      "wifi6",
+      "networking"
+    ]
+  },
+  {
+    "product_id": "prod_0278",
+    "name": "Coffee Grinder",
+    "category": "home_appliances",
+    "description": "Burr coffee grinder with 17 grind settings and 250g capacity.",
+    "price": 50.32,
+    "tags": [
+      "grinder",
+      "coffee",
+      "burr"
+    ]
+  },
+  {
+    "product_id": "prod_0459",
+    "name": "Seat Cushion Cover Set",
+    "category": "automotive_accessories",
+    "description": "Neoprene car seat covers, front pair, with anti-slip backing and headrest cutouts.",
+    "price": 61.75,
+    "tags": [
+      "seat",
+      "cover",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0319",
+    "name": "Compact Ice Maker",
+    "category": "home_appliances",
+    "description": "compact version of the popular ice maker with enhanced features.",
+    "price": 293.29,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0486",
+    "name": "Elite Rear View Mirror Camera",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular rear view mirror camera with enhanced features.",
+    "price": 470.96,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0362",
+    "name": "Pro Deep Work",
+    "category": "books",
+    "description": "pro version of the popular deep work with enhanced features.",
+    "price": 158.25,
+    "tags": [
+      "software",
+      "craft",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0003",
+    "name": "Mechanical Gaming Keyboard",
+    "category": "electronics",
+    "description": "RGB mechanical keyboard with Cherry MX Blue switches and aluminum frame.",
+    "price": 128.14,
+    "tags": [
+      "keyboard",
+      "gaming",
+      "mechanical"
+    ]
+  },
+  {
+    "product_id": "prod_0232",
+    "name": "Pro Push-Up Bars",
+    "category": "sports_gear",
+    "description": "pro version of the popular push-up bars with enhanced features.",
+    "price": 247.87,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0255",
+    "name": "Essential Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "essential version of the popular kettlebell 35lbs with enhanced features.",
+    "price": 446.93,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0104",
+    "name": "Cardigan",
+    "category": "clothing",
+    "description": "Open-front cardigan with cable knit and shawl collar.",
+    "price": 81.3,
+    "tags": [
+      "cardigan",
+      "knit",
+      "open"
+    ]
+  },
+  {
+    "product_id": "prod_0262",
+    "name": "Elite Jump Rope Speed",
+    "category": "sports_gear",
+    "description": "elite version of the popular jump rope speed with enhanced features.",
+    "price": 363.53,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0345",
+    "name": "The Cathedral and the Bazaar",
+    "category": "books",
+    "description": "Musings on Linux and open source by an accidental revolutionary.",
+    "price": 13.34,
+    "tags": [
+      "opensource",
+      "linux",
+      "essays"
+    ]
+  },
+  {
+    "product_id": "prod_0266",
+    "name": "Tower Fan",
+    "category": "home_appliances",
+    "description": "Oscillating tower fan with remote, timer, and 3 speed settings.",
+    "price": 78.4,
+    "tags": [
+      "fan",
+      "tower",
+      "oscillating"
+    ]
+  },
+  {
+    "product_id": "prod_0203",
+    "name": "Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "Cast iron kettlebell with flat base and powder coat finish.",
+    "price": 48.36,
+    "tags": [
+      "kettlebell",
+      "weight",
+      "strength"
+    ]
+  },
+  {
+    "product_id": "prod_0500",
+    "name": "Elite Dash Camera",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular dash camera with enhanced features.",
+    "price": 48.29,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0178",
+    "name": "Premium Loafers",
+    "category": "footwear",
+    "description": "premium version of the popular loafers with enhanced features.",
+    "price": 177.48,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0109",
+    "name": "Pajama Set",
+    "category": "clothing",
+    "description": "Cotton pajama set with button top, drawstring pants, and piped trim.",
+    "price": 48.11,
+    "tags": [
+      "pajama",
+      "sleep",
+      "cotton"
+    ]
+  },
+  {
+    "product_id": "prod_0276",
+    "name": "Rice Cooker",
+    "category": "home_appliances",
+    "description": "Fuzzy logic rice cooker with 5-cup capacity and keep-warm function.",
+    "price": 43.21,
+    "tags": [
+      "rice",
+      "cooker",
+      "kitchen"
+    ]
+  },
+  {
+    "product_id": "prod_0077",
+    "name": "Jogger Sweatpants",
+    "category": "clothing",
+    "description": "French terry jogger sweatpants with elastic cuffs and drawstring waist.",
+    "price": 50.76,
+    "tags": [
+      "sweatpants",
+      "jogger",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0328",
+    "name": "Clean Code",
+    "category": "books",
+    "description": "A handbook of agile software craftsmanship by Robert C. Martin.",
+    "price": 35.16,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0378",
+    "name": "Essential The Art of War",
+    "category": "books",
+    "description": "essential version of the popular the art of war with enhanced features.",
+    "price": 144.27,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0019",
+    "name": "HDMI Cable 4K 6ft",
+    "category": "electronics",
+    "description": "High-speed HDMI 2.1 cable supporting 4K@120Hz and eARC.",
+    "price": 8.49,
+    "tags": [
+      "hdmi",
+      "cable",
+      "4k"
+    ]
+  },
+  {
+    "product_id": "prod_0265",
+    "name": "Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "50-pint dehumidifier with continuous drain and Energy Star rating.",
+    "price": 201.84,
+    "tags": [
+      "dehumidifier",
+      "moisture",
+      "basement"
+    ]
+  },
+  {
+    "product_id": "prod_0442",
+    "name": "Deluxe Hair Mask Deep Conditioner",
+    "category": "beauty",
+    "description": "deluxe version of the popular hair mask deep conditioner with enhanced features.",
+    "price": 134.76,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0275",
+    "name": "Ice Maker",
+    "category": "home_appliances",
+    "description": "Portable ice maker producing 26 lbs of ice per day with 2 sizes.",
+    "price": 119.11,
+    "tags": [
+      "ice",
+      "maker",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0193",
+    "name": "Deluxe Sandals",
+    "category": "footwear",
+    "description": "deluxe version of the popular sandals with enhanced features.",
+    "price": 184.83,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0170",
+    "name": "Pro Dress Oxfords",
+    "category": "footwear",
+    "description": "pro version of the popular dress oxfords with enhanced features.",
+    "price": 383.93,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0149",
+    "name": "Essential Basketball Shoes",
+    "category": "footwear",
+    "description": "essential version of the popular basketball shoes with enhanced features.",
+    "price": 133.91,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0001",
+    "name": "Wireless Bluetooth Earbuds",
+    "category": "electronics",
+    "description": "Noise-cancelling wireless earbuds with 24hr battery and IPX5 water resistance.",
+    "price": 80.92,
+    "tags": [
+      "bluetooth",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    "product_id": "prod_0245",
+    "name": "Deluxe Push-Up Bars",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular push-up bars with enhanced features.",
+    "price": 202.23,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0032",
+    "name": "USB Fan Desktop",
+    "category": "electronics",
+    "description": "Quiet USB desktop fan with adjustable tilt and 3 speed settings.",
+    "price": 13.47,
+    "tags": [
+      "fan",
+      "usb",
+      "desktop"
+    ]
+  },
+  {
+    "product_id": "prod_0439",
+    "name": "Premium Facial Cleanser",
+    "category": "beauty",
+    "description": "premium version of the popular facial cleanser with enhanced features.",
+    "price": 302.71,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0090",
+    "name": "Corduroy Pants",
+    "category": "clothing",
+    "description": "Straight-leg corduroy pants with button closure and five-pocket styling.",
+    "price": 64.6,
+    "tags": [
+      "pants",
+      "corduroy",
+      "retro"
+    ]
+  },
+  {
+    "product_id": "prod_0030",
+    "name": "Smart Doorbell",
+    "category": "electronics",
+    "description": "Video doorbell with 1080p, two-way audio, night vision, and cloud storage.",
+    "price": 69.16,
+    "tags": [
+      "doorbell",
+      "smart",
+      "camera"
+    ]
+  },
+  {
+    "product_id": "prod_0405",
+    "name": "Facial Cleanser",
+    "category": "beauty",
+    "description": "Gentle foaming facial cleanser with green tea and chamomile extract.",
+    "price": 15.13,
+    "tags": [
+      "cleanser",
+      "face",
+      "gentle"
+    ]
+  },
+  {
+    "product_id": "prod_0303",
+    "name": "Compact Rice Cooker",
+    "category": "home_appliances",
+    "description": "compact version of the popular rice cooker with enhanced features.",
+    "price": 15.15,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0274",
+    "name": "Sewing Machine",
+    "category": "home_appliances",
+    "description": "Compact sewing machine with 12 stitch patterns and free arm.",
+    "price": 100.48,
+    "tags": [
+      "sewing",
+      "machine",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0240",
+    "name": "Premium Push-Up Bars",
+    "category": "sports_gear",
+    "description": "premium version of the popular push-up bars with enhanced features.",
+    "price": 241.3,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0014",
+    "name": "Bluetooth Tracker",
+    "category": "electronics",
+    "description": "Key-finder Bluetooth tracker with 80dB ringer and 1-year battery.",
+    "price": 24.04,
+    "tags": [
+      "tracker",
+      "bluetooth",
+      "finder"
+    ]
+  },
+  {
+    "product_id": "prod_0264",
+    "name": "Instant Pot 6qt",
+    "category": "home_appliances",
+    "description": "7-in-1 multi-functional pressure cooker with 14 smart programs.",
+    "price": 89.28,
+    "tags": [
+      "cooker",
+      "pressure",
+      "instant"
+    ]
+  },
+  {
+    "product_id": "prod_0308",
+    "name": "Deluxe Electric Blanket",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular electric blanket with enhanced features.",
+    "price": 222.17,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0086",
+    "name": "Peacoat",
+    "category": "clothing",
+    "description": "Wool-blend peacoat with double-breasted front and storm flap.",
+    "price": 249.3,
+    "tags": [
+      "coat",
+      "wool",
+      "winter"
+    ]
+  },
+  {
+    "product_id": "prod_0373",
+    "name": "Essential Designing Data-Intensive Applications",
+    "category": "books",
+    "description": "essential version of the popular designing data-intensive applications with enhanced features.",
+    "price": 166.04,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0298",
+    "name": "Pro Electric Blanket",
+    "category": "home_appliances",
+    "description": "pro version of the popular electric blanket with enhanced features.",
+    "price": 153.08,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0273",
+    "name": "Mini Fridge",
+    "category": "home_appliances",
+    "description": "Compact mini fridge with 4L capacity, thermoelectric cooling, and quiet operation.",
+    "price": 50.76,
+    "tags": [
+      "fridge",
+      "mini",
+      "compact"
+    ]
+  },
+  {
+    "product_id": "prod_0049",
+    "name": "Weather Station",
+    "category": "electronics",
+    "description": "Wireless weather station with indoor/outdoor sensor and color display.",
+    "price": 49.46,
+    "tags": [
+      "weather",
+      "station",
+      "wireless"
+    ]
+  },
+  {
+    "product_id": "prod_0058",
+    "name": "Electric Kettle",
+    "category": "electronics",
+    "description": "Temperature-control electric kettle with keep-warm function and 1.7L capacity.",
+    "price": 46.24,
+    "tags": [
+      "kettle",
+      "electric",
+      "temperature"
+    ]
+  },
+  {
+    "product_id": "prod_0279",
+    "name": "Toaster Oven",
+    "category": "home_appliances",
+    "description": "Countertop toaster oven with convection, 60-min timer, and 4 cooking functions.",
+    "price": 68.56,
+    "tags": [
+      "oven",
+      "toaster",
+      "convection"
+    ]
+  },
+  {
+    "product_id": "prod_0054",
+    "name": "Portable Jump Starter",
+    "category": "electronics",
+    "description": "2000A car jump starter with USB power bank and LED flashlight.",
+    "price": 68.68,
+    "tags": [
+      "jump",
+      "starter",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0142",
+    "name": "Slip-On Sneakers",
+    "category": "footwear",
+    "description": "Lace-less slip-on sneakers with memory foam insole and stretch knit.",
+    "price": 69.76,
+    "tags": [
+      "slipon",
+      "sneakers",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0452",
+    "name": "Pro Eyelash Curler",
+    "category": "beauty",
+    "description": "pro version of the popular eyelash curler with enhanced features.",
+    "price": 61.68,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0416",
+    "name": "Micellar Water",
+    "category": "beauty",
+    "description": "Micellar cleansing water with glycerin for all skin types.",
+    "price": 12.95,
+    "tags": [
+      "micellar",
+      "cleanser",
+      "water"
+    ]
+  },
+  {
+    "product_id": "prod_0493",
+    "name": "Pro Rear View Mirror Camera",
+    "category": "automotive_accessories",
+    "description": "pro version of the popular rear view mirror camera with enhanced features.",
+    "price": 153.04,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0329",
+    "name": "The Pragmatic Programmer",
+    "category": "books",
+    "description": "Journeyman to master, 20th anniversary edition by Andy Hunt.",
+    "price": 39.89,
+    "tags": [
+      "programming",
+      "pragmatic",
+      "career"
+    ]
+  },
+  {
+    "product_id": "prod_0334",
+    "name": "Atomic Habits",
+    "category": "books",
+    "description": "An easy and proven way to build good habits by James Clear.",
+    "price": 15.93,
+    "tags": [
+      "habits",
+      "selfhelp",
+      "productivity"
+    ]
+  },
+  {
+    "product_id": "prod_0161",
+    "name": "Pro Trail Running Shoes",
+    "category": "footwear",
+    "description": "pro version of the popular trail running shoes with enhanced features.",
+    "price": 196.15,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0068",
+    "name": "Classic Denim Jacket",
+    "category": "clothing",
+    "description": "Timeless denim jacket with button front, chest pockets, and adjustable waist.",
+    "price": 90.47,
+    "tags": [
+      "jacket",
+      "denim",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0479",
+    "name": "Cargo Liner",
+    "category": "automotive_accessories",
+    "description": "Waterproof cargo liner for SUV trunk with raised edge and non-slip surface.",
+    "price": 48.05,
+    "tags": [
+      "cargo",
+      "liner",
+      "trunk"
+    ]
+  },
+  {
+    "product_id": "prod_0470",
+    "name": "Windshield Cover",
+    "category": "automotive_accessories",
+    "description": "Frost shield windshield cover with magnetic flaps and zippered storage bag.",
+    "price": 26.24,
+    "tags": [
+      "windshield",
+      "cover",
+      "frost"
+    ]
+  },
+  {
+    "product_id": "prod_0457",
+    "name": "Essential Setting Spray",
+    "category": "beauty",
+    "description": "essential version of the popular setting spray with enhanced features.",
+    "price": 170.38,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0425",
+    "name": "Deluxe Straightening Brush",
+    "category": "beauty",
+    "description": "deluxe version of the popular straightening brush with enhanced features.",
+    "price": 448.29,
+    "tags": [
+      "skincare",
+      "vitaminc",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0214",
+    "name": "Sweat Towel",
+    "category": "sports_gear",
+    "description": "Microfiber sweat towel with quick-dry and anti-odor technology.",
+    "price": 14.68,
+    "tags": [
+      "towel",
+      "sweat",
+      "microfiber"
+    ]
+  },
+  {
+    "product_id": "prod_0341",
+    "name": "The Great Gatsby",
+    "category": "books",
+    "description": "F. Scott Fitzgerald's masterpiece of the Jazz Age.",
+    "price": 11.14,
+    "tags": [
+      "fiction",
+      "classic",
+      "american"
+    ]
+  },
+  {
+    "product_id": "prod_0051",
+    "name": "Smart Egg Timer",
+    "category": "electronics",
+    "description": "Bluetooth egg timer with app control and 10-minute timer.",
+    "price": 11.82,
+    "tags": [
+      "timer",
+      "smart",
+      "kitchen"
+    ]
+  },
+  {
+    "product_id": "prod_0208",
+    "name": "Treadmill",
+    "category": "sports_gear",
+    "description": "Folding treadmill with incline, pulse sensors, and shock absorption.",
+    "price": 598.11,
+    "tags": [
+      "treadmill",
+      "running",
+      "cardio"
+    ]
+  },
+  {
+    "product_id": "prod_0389",
+    "name": "Compact The Great Gatsby",
+    "category": "books",
+    "description": "compact version of the popular the great gatsby with enhanced features.",
+    "price": 107.95,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0472",
+    "name": "Rear View Mirror Camera",
+    "category": "automotive_accessories",
+    "description": "Rear view mirror dash cam with 1080p front and rear recording.",
+    "price": 88.17,
+    "tags": [
+      "mirror",
+      "camera",
+      "rearview"
+    ]
+  },
+  {
+    "product_id": "prod_0177",
+    "name": "Essential Running Shoes",
+    "category": "footwear",
+    "description": "essential version of the popular running shoes with enhanced features.",
+    "price": 149.2,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0181",
+    "name": "Essential Canvas Sneakers",
+    "category": "footwear",
+    "description": "essential version of the popular canvas sneakers with enhanced features.",
+    "price": 247.31,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0271",
+    "name": "Food Dehydrator",
+    "category": "home_appliances",
+    "description": "Digital food dehydrator with 5 trays, timer, and adjustable temperature.",
+    "price": 61.49,
+    "tags": [
+      "dehydrator",
+      "food",
+      "snacks"
+    ]
+  },
+  {
+    "product_id": "prod_0454",
+    "name": "Premium SPF 50 Sunscreen",
+    "category": "beauty",
+    "description": "premium version of the popular spf 50 sunscreen with enhanced features.",
+    "price": 256.89,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0186",
+    "name": "Deluxe Hiking Boots",
+    "category": "footwear",
+    "description": "deluxe version of the popular hiking boots with enhanced features.",
+    "price": 402.87,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0237",
+    "name": "Essential Meditation Cushion",
+    "category": "sports_gear",
+    "description": "essential version of the popular meditation cushion with enhanced features.",
+    "price": 25.33,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0284",
+    "name": "Elite Toaster Oven",
+    "category": "home_appliances",
+    "description": "elite version of the popular toaster oven with enhanced features.",
+    "price": 155.7,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0199",
+    "name": "Adjustable Dumbbells",
+    "category": "sports_gear",
+    "description": "Space-saving adjustable dumbbells set from 5-52.5 lbs each.",
+    "price": 298.79,
+    "tags": [
+      "dumbbells",
+      "adjustable",
+      "weights"
+    ]
+  },
+  {
+    "product_id": "prod_0042",
+    "name": "Phone Gimbal Stabilizer",
+    "category": "electronics",
+    "description": "3-axis phone gimbal with face tracking, zoom control, and foldable design.",
+    "price": 90.51,
+    "tags": [
+      "gimbal",
+      "stabilizer",
+      "phone"
+    ]
+  },
+  {
+    "product_id": "prod_0158",
+    "name": "Compact Running Shoes",
+    "category": "footwear",
+    "description": "compact version of the popular running shoes with enhanced features.",
+    "price": 454.92,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0318",
+    "name": "Premium Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "premium version of the popular dehumidifier 50pt with enhanced features.",
+    "price": 129.35,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0191",
+    "name": "Pro Slip-On Sneakers",
+    "category": "footwear",
+    "description": "pro version of the popular slip-on sneakers with enhanced features.",
+    "price": 429.81,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0447",
+    "name": "Deluxe Vitamin C Serum",
+    "category": "beauty",
+    "description": "deluxe version of the popular vitamin c serum with enhanced features.",
+    "price": 143.51,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0342",
+    "name": "1984",
+    "category": "books",
+    "description": "George Orwell's dystopian social science fiction novel.",
+    "price": 12.91,
+    "tags": [
+      "fiction",
+      "dystopian",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0347",
+    "name": "Structure and Interpretation",
+    "category": "books",
+    "description": "Classic computer science text by Sussman and Abelson.",
+    "price": 61.76,
+    "tags": [
+      "cs",
+      "textbook",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0165",
+    "name": "Deluxe Chelsea Boots",
+    "category": "footwear",
+    "description": "deluxe version of the popular chelsea boots with enhanced features.",
+    "price": 199.42,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0487",
+    "name": "Elite Jump Starter Pack",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular jump starter pack with enhanced features.",
+    "price": 319.42,
+    "tags": [
+      "portable",
+      "vacuum",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0128",
+    "name": "Deluxe Camp Collar Shirt",
+    "category": "clothing",
+    "description": "deluxe version of the popular camp collar shirt with enhanced features.",
+    "price": 319.49,
+    "tags": [
+      "denim",
+      "jacket",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0236",
+    "name": "Pro Jump Rope Speed",
+    "category": "sports_gear",
+    "description": "pro version of the popular jump rope speed with enhanced features.",
+    "price": 11.78,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0344",
+    "name": "Machine Learning Engineering",
+    "category": "books",
+    "description": "Applied ML techniques for production systems by Andriy Burkov.",
+    "price": 46.36,
+    "tags": [
+      "ml",
+      "engineering",
+      "production"
+    ]
+  },
+  {
+    "product_id": "prod_0188",
+    "name": "Elite Basketball Shoes",
+    "category": "footwear",
+    "description": "elite version of the popular basketball shoes with enhanced features.",
+    "price": 257.86,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0069",
+    "name": "Merino Wool Sweater",
+    "category": "clothing",
+    "description": "Lightweight merino wool crewneck sweater perfect for layering.",
+    "price": 74.41,
+    "tags": [
+      "sweater",
+      "wool",
+      "merino"
+    ]
+  },
+  {
+    "product_id": "prod_0061",
+    "name": "Robot Vacuum",
+    "category": "electronics",
+    "description": "Robot vacuum with LiDAR mapping, 2500Pa suction, and app scheduling.",
+    "price": 300.37,
+    "tags": [
+      "vacuum",
+      "robot",
+      "smart"
+    ]
+  },
+  {
+    "product_id": "prod_0035",
+    "name": "Mini PC Stick",
+    "category": "electronics",
+    "description": "Intel N100 mini PC stick with 8GB RAM, 256GB SSD, and WiFi 6.",
+    "price": 219.85,
+    "tags": [
+      "pc",
+      "mini",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0010",
+    "name": "External SSD 1TB",
+    "category": "electronics",
+    "description": "Portable 1TB SSD with USB 3.2 Gen 2 speeds up to 1050MB/s.",
+    "price": 110.95,
+    "tags": [
+      "ssd",
+      "storage",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0065",
+    "name": "Food Processor",
+    "category": "electronics",
+    "description": "14-cup food processor with 1200W motor, slicing discs, and dough blade.",
+    "price": 100.1,
+    "tags": [
+      "processor",
+      "food",
+      "kitchen"
+    ]
+  },
+  {
+    "product_id": "prod_0028",
+    "name": "Digital Photo Frame",
+    "category": "electronics",
+    "description": "10-inch WiFi digital photo frame with app upload and slideshow.",
+    "price": 78.8,
+    "tags": [
+      "frame",
+      "digital",
+      "wifi"
+    ]
+  },
+  {
+    "product_id": "prod_0404",
+    "name": "Straightening Brush",
+    "category": "beauty",
+    "description": "Heated straightening brush with anti-scald technology and auto shut-off.",
+    "price": 46.84,
+    "tags": [
+      "straightener",
+      "brush",
+      "hair"
+    ]
+  },
+  {
+    "product_id": "prod_0136",
+    "name": "Loafers",
+    "category": "footwear",
+    "description": "Leather loafers with horsebit detail and cushioned insole.",
+    "price": 121.84,
+    "tags": [
+      "loafers",
+      "leather",
+      "formal"
+    ]
+  },
+  {
+    "product_id": "prod_0436",
+    "name": "Essential BB Cream",
+    "category": "beauty",
+    "description": "essential version of the popular bb cream with enhanced features.",
+    "price": 142.38,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0131",
+    "name": "Premium Wool Blazer",
+    "category": "clothing",
+    "description": "premium version of the popular wool blazer with enhanced features.",
+    "price": 219.09,
+    "tags": [
+      "jacket",
+      "denim",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0320",
+    "name": "Compact Water Filter Pitcher",
+    "category": "home_appliances",
+    "description": "compact version of the popular water filter pitcher with enhanced features.",
+    "price": 53.09,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0450",
+    "name": "Compact Concealer Full Coverage",
+    "category": "beauty",
+    "description": "compact version of the popular concealer full coverage with enhanced features.",
+    "price": 180.93,
+    "tags": [
+      "vitaminc",
+      "skincare",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0244",
+    "name": "Deluxe Sweat Towel",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular sweat towel with enhanced features.",
+    "price": 423.33,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0096",
+    "name": "V-Neck Sweater",
+    "category": "clothing",
+    "description": "Cotton v-neck sweater with ribbed hem and cuffs.",
+    "price": 61.81,
+    "tags": [
+      "sweater",
+      "vneck",
+      "cotton"
+    ]
+  },
+  {
+    "product_id": "prod_0299",
+    "name": "Deluxe Ice Maker",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular ice maker with enhanced features.",
+    "price": 372.05,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0176",
+    "name": "Compact Trail Running Shoes",
+    "category": "footwear",
+    "description": "compact version of the popular trail running shoes with enhanced features.",
+    "price": 470.38,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0407",
+    "name": "Perfume Eau de Parfum",
+    "category": "beauty",
+    "description": "Long-lasting floral eau de parfum with notes of jasmine and rose.",
+    "price": 60.94,
+    "tags": [
+      "perfume",
+      "fragrance",
+      "floral"
+    ]
+  },
+  {
+    "product_id": "prod_0025",
+    "name": "Monitor Light Bar",
+    "category": "electronics",
+    "description": "Auto-dimming monitor light bar with asymmetrical lighting and no screen glare.",
+    "price": 60.74,
+    "tags": [
+      "monitor",
+      "light",
+      "bar"
+    ]
+  },
+  {
+    "product_id": "prod_0471",
+    "name": "Jump Starter Pack",
+    "category": "automotive_accessories",
+    "description": "800A peak jump starter pack with USB output and LED flashlight.",
+    "price": 60.09,
+    "tags": [
+      "jump",
+      "starter",
+      "battery"
+    ]
+  },
+  {
+    "product_id": "prod_0503",
+    "name": "Premium Backup Camera",
+    "category": "automotive_accessories",
+    "description": "premium version of the popular backup camera with enhanced features.",
+    "price": 396.57,
+    "tags": [
+      "portable",
+      "vacuum",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0355",
+    "name": "Premium The Great Gatsby",
+    "category": "books",
+    "description": "premium version of the popular the great gatsby with enhanced features.",
+    "price": 245.47,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0119",
+    "name": "Raglan Sweatshirt",
+    "category": "clothing",
+    "description": "Raglan sleeve sweatshirt with contrast stitching and fleece lining.",
+    "price": 54.11,
+    "tags": [
+      "sweatshirt",
+      "raglan",
+      "fleece"
+    ]
+  },
+  {
+    "product_id": "prod_0363",
+    "name": "Essential The Art of War",
+    "category": "books",
+    "description": "essential version of the popular the art of war with enhanced features.",
+    "price": 276.83,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0261",
+    "name": "Pro Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "pro version of the popular kettlebell 35lbs with enhanced features.",
+    "price": 476.11,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0045",
+    "name": "Wireless Keyboard",
+    "category": "electronics",
+    "description": "Full-size wireless keyboard with number pad and 2-year battery life.",
+    "price": 40.45,
+    "tags": [
+      "keyboard",
+      "wireless",
+      "fullsize"
+    ]
+  },
+  {
+    "product_id": "prod_0420",
+    "name": "Deluxe Body Lotion",
+    "category": "beauty",
+    "description": "deluxe version of the popular body lotion with enhanced features.",
+    "price": 225.79,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0335",
+    "name": "The Art of War",
+    "category": "books",
+    "description": "Ancient military strategy classic by Sun Tzu.",
+    "price": 11.54,
+    "tags": [
+      "strategy",
+      "philosophy",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0283",
+    "name": "Premium Food Dehydrator",
+    "category": "home_appliances",
+    "description": "premium version of the popular food dehydrator with enhanced features.",
+    "price": 321.93,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0370",
+    "name": "Elite 1984",
+    "category": "books",
+    "description": "elite version of the popular 1984 with enhanced features.",
+    "price": 31.03,
+    "tags": [
+      "software",
+      "craft",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0174",
+    "name": "Compact Hiking Boots",
+    "category": "footwear",
+    "description": "compact version of the popular hiking boots with enhanced features.",
+    "price": 251.94,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0462",
+    "name": "Car Phone Mount",
+    "category": "automotive_accessories",
+    "description": "Dashboard car phone mount with strong suction and one-touch release.",
+    "price": 19.98,
+    "tags": [
+      "mount",
+      "phone",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0292",
+    "name": "Deluxe Waffle Maker",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular waffle maker with enhanced features.",
+    "price": 488.81,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0140",
+    "name": "Sandals",
+    "category": "footwear",
+    "description": "Leather sandals with adjustable straps and contoured footbed.",
+    "price": 53.37,
+    "tags": [
+      "sandals",
+      "leather",
+      "summer"
+    ]
+  },
+  {
+    "product_id": "prod_0039",
+    "name": "GPS Tracker for Car",
+    "category": "electronics",
+    "description": "Real-time GPS tracker with magnetic mount and mobile app tracking.",
+    "price": 45.9,
+    "tags": [
+      "gps",
+      "tracker",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0296",
+    "name": "Premium Mini Fridge",
+    "category": "home_appliances",
+    "description": "premium version of the popular mini fridge with enhanced features.",
+    "price": 366.11,
+    "tags": [
+      "vacuum",
+      "cordless",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0002",
+    "name": "Ultra HD 4K Monitor 27in",
+    "category": "electronics",
+    "description": "27-inch 4K IPS monitor with 99% sRGB, USB-C, and built-in speakers.",
+    "price": 351.65,
+    "tags": [
+      "monitor",
+      "4k",
+      "display"
+    ]
+  },
+  {
+    "product_id": "prod_0247",
+    "name": "Compact Foam Roller",
+    "category": "sports_gear",
+    "description": "compact version of the popular foam roller with enhanced features.",
+    "price": 427.29,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0397",
+    "name": "Nail Polish Set",
+    "category": "beauty",
+    "description": "Set of 6 gel-like nail polishes with high-gloss finish and chip resistance.",
+    "price": 22.45,
+    "tags": [
+      "nail",
+      "polish",
+      "gel"
+    ]
+  },
+  {
+    "product_id": "prod_0083",
+    "name": "Turtleneck Sweater",
+    "category": "clothing",
+    "description": "Ribbed knit turtleneck sweater with stretch and soft feel.",
+    "price": 69.5,
+    "tags": [
+      "turtleneck",
+      "sweater",
+      "knit"
+    ]
+  },
+  {
+    "product_id": "prod_0475",
+    "name": "Roof Rack Cross Bars",
+    "category": "automotive_accessories",
+    "description": "Aluminum roof rack cross bars with locking mechanism, fits most vehicles.",
+    "price": 130.62,
+    "tags": [
+      "rack",
+      "roof",
+      "bars"
+    ]
+  },
+  {
+    "product_id": "prod_0352",
+    "name": "Pro 1984",
+    "category": "books",
+    "description": "pro version of the popular 1984 with enhanced features.",
+    "price": 31.54,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0343",
+    "name": "To Kill a Mockingbird",
+    "category": "books",
+    "description": "Harper Lee's Pulitzer prize-winning novel about racial injustice.",
+    "price": 13.8,
+    "tags": [
+      "fiction",
+      "classic",
+      "american"
+    ]
+  },
+  {
+    "product_id": "prod_0438",
+    "name": "Premium Face Mask Sheet Set",
+    "category": "beauty",
+    "description": "premium version of the popular face mask sheet set with enhanced features.",
+    "price": 176.29,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0057",
+    "name": "Smart Lock",
+    "category": "electronics",
+    "description": "Keyless smart lock with fingerprint, PIN, and app access control.",
+    "price": 148.06,
+    "tags": [
+      "lock",
+      "smart",
+      "keyless"
+    ]
+  },
+  {
+    "product_id": "prod_0497",
+    "name": "Compact Jump Starter Pack",
+    "category": "automotive_accessories",
+    "description": "compact version of the popular jump starter pack with enhanced features.",
+    "price": 378.64,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0082",
+    "name": "Cargo Shorts",
+    "category": "clothing",
+    "description": "Cotton cargo shorts with multiple pockets and adjustable waist.",
+    "price": 41.6,
+    "tags": [
+      "shorts",
+      "cargo",
+      "summer"
+    ]
+  },
+  {
+    "product_id": "prod_0202",
+    "name": "Jump Rope Speed",
+    "category": "sports_gear",
+    "description": "Speed jump rope with ball bearings and adjustable cable.",
+    "price": 13.36,
+    "tags": [
+      "jump",
+      "rope",
+      "cardio"
+    ]
+  },
+  {
+    "product_id": "prod_0469",
+    "name": "Sun Shade",
+    "category": "automotive_accessories",
+    "description": "Foldable car sun shade with UV protection and reflective silver coating.",
+    "price": 14.38,
+    "tags": [
+      "sun",
+      "shade",
+      "uv"
+    ]
+  },
+  {
+    "product_id": "prod_0084",
+    "name": "Denim Shirt",
+    "category": "clothing",
+    "description": "Western-style denim shirt with snap buttons and chest pockets.",
+    "price": 60.35,
+    "tags": [
+      "shirt",
+      "denim",
+      "western"
+    ]
+  },
+  {
+    "product_id": "prod_0412",
+    "name": "Setting Spray",
+    "category": "beauty",
+    "description": "Makeup setting spray with micro-fine mist and 16hr hold.",
+    "price": 14.81,
+    "tags": [
+      "setting",
+      "spray",
+      "makeup"
+    ]
+  },
+  {
+    "product_id": "prod_0079",
+    "name": "Tailored Blazer",
+    "category": "clothing",
+    "description": "Two-button tailored blazer with notched lapels and interior pockets.",
+    "price": 198.27,
+    "tags": [
+      "blazer",
+      "tailored",
+      "formal"
+    ]
+  },
+  {
+    "product_id": "prod_0421",
+    "name": "Premium Lipstick Matte",
+    "category": "beauty",
+    "description": "premium version of the popular lipstick matte with enhanced features.",
+    "price": 206.77,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0309",
+    "name": "Compact Water Filter Pitcher",
+    "category": "home_appliances",
+    "description": "compact version of the popular water filter pitcher with enhanced features.",
+    "price": 17.51,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0348",
+    "name": "Deluxe Python Crash Course",
+    "category": "books",
+    "description": "deluxe version of the popular python crash course with enhanced features.",
+    "price": 116.65,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0466",
+    "name": "Tire Pressure Monitor",
+    "category": "automotive_accessories",
+    "description": "Solar-powered TPMS with 4 external sensors and real-time display.",
+    "price": 38.7,
+    "tags": [
+      "tire",
+      "pressure",
+      "monitor"
+    ]
+  },
+  {
+    "product_id": "prod_0123",
+    "name": "Compact Linen Shirt",
+    "category": "clothing",
+    "description": "compact version of the popular linen shirt with enhanced features.",
+    "price": 301.81,
+    "tags": [
+      "casual",
+      "jacket",
+      "denim"
+    ]
+  },
+  {
+    "product_id": "prod_0451",
+    "name": "Premium Facial Cleanser",
+    "category": "beauty",
+    "description": "premium version of the popular facial cleanser with enhanced features.",
+    "price": 104.39,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0112",
+    "name": "Leather Jacket",
+    "category": "clothing",
+    "description": "Genuine leather motorcycle jacket with zip-out lining and snap lapels.",
+    "price": 398.43,
+    "tags": [
+      "jacket",
+      "leather",
+      "motorcycle"
+    ]
+  },
+  {
+    "product_id": "prod_0235",
+    "name": "Pro Weight Bench",
+    "category": "sports_gear",
+    "description": "pro version of the popular weight bench with enhanced features.",
+    "price": 283.03,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0073",
+    "name": "Cashmere Scarf",
+    "category": "clothing",
+    "description": "Pure cashmere scarf with fringed edges and 70x180cm size.",
+    "price": 88.01,
+    "tags": [
+      "scarf",
+      "cashmere",
+      "luxury"
+    ]
+  },
+  {
+    "product_id": "prod_0034",
+    "name": "Cable Management Box",
+    "category": "electronics",
+    "description": "Large cable management box with ventilation and 2 power outlets.",
+    "price": 30.17,
+    "tags": [
+      "cable",
+      "management",
+      "organizer"
+    ]
+  },
+  {
+    "product_id": "prod_0078",
+    "name": "Polo Shirt",
+    "category": "clothing",
+    "description": "Classic pique polo shirt with embroidered logo and ribbed collar.",
+    "price": 44.22,
+    "tags": [
+      "polo",
+      "shirt",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0248",
+    "name": "Essential Pilates Ring",
+    "category": "sports_gear",
+    "description": "essential version of the popular pilates ring with enhanced features.",
+    "price": 341.62,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0192",
+    "name": "Elite Hiking Boots",
+    "category": "footwear",
+    "description": "elite version of the popular hiking boots with enhanced features.",
+    "price": 16.97,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0467",
+    "name": "Trunk Organizer",
+    "category": "automotive_accessories",
+    "description": "Collapsible trunk organizer with multiple compartments and waterproof liner.",
+    "price": 34.16,
+    "tags": [
+      "trunk",
+      "organizer",
+      "storage"
+    ]
+  },
+  {
+    "product_id": "prod_0419",
+    "name": "Pro BB Cream",
+    "category": "beauty",
+    "description": "pro version of the popular bb cream with enhanced features.",
+    "price": 250.03,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0231",
+    "name": "Essential Meditation Cushion",
+    "category": "sports_gear",
+    "description": "essential version of the popular meditation cushion with enhanced features.",
+    "price": 52.24,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0036",
+    "name": "Screen Protector Kit",
+    "category": "electronics",
+    "description": "Tempered glass screen protector with alignment tool for phones/tablets.",
+    "price": 7.11,
+    "tags": [
+      "screen",
+      "protector",
+      "glass"
+    ]
+  },
+  {
+    "product_id": "prod_0417",
+    "name": "BB Cream",
+    "category": "beauty",
+    "description": "BB cream with SPF 30, light coverage, and skin-tone adapt technology.",
+    "price": 23.49,
+    "tags": [
+      "bbcream",
+      "spf",
+      "coverage"
+    ]
+  },
+  {
+    "product_id": "prod_0495",
+    "name": "Essential Sun Shade",
+    "category": "automotive_accessories",
+    "description": "essential version of the popular sun shade with enhanced features.",
+    "price": 217.66,
+    "tags": [
+      "vacuum",
+      "portable",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0399",
+    "name": "Face Mask Sheet Set",
+    "category": "beauty",
+    "description": "Set of 10 sheet masks with hyaluronic acid, collagen, and green tea.",
+    "price": 16.03,
+    "tags": [
+      "mask",
+      "sheet",
+      "face"
+    ]
+  },
+  {
+    "product_id": "prod_0117",
+    "name": "Parka",
+    "category": "clothing",
+    "description": "Insulated parka with fur-trimmed hood and sealed seams.",
+    "price": 351.74,
+    "tags": [
+      "parka",
+      "insulated",
+      "winter"
+    ]
+  },
+  {
+    "product_id": "prod_0230",
+    "name": "Elite Water Bottle 32oz",
+    "category": "sports_gear",
+    "description": "elite version of the popular water bottle 32oz with enhanced features.",
+    "price": 304.31,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0504",
+    "name": "Elite All-Weather Floor Mats",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular all-weather floor mats with enhanced features.",
+    "price": 149.33,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0350",
+    "name": "Deluxe Fluent Python",
+    "category": "books",
+    "description": "deluxe version of the popular fluent python with enhanced features.",
+    "price": 433.83,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0496",
+    "name": "Elite Cargo Liner",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular cargo liner with enhanced features.",
+    "price": 285.74,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0322",
+    "name": "Deluxe Space Heater",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular space heater with enhanced features.",
+    "price": 224.1,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0087",
+    "name": "Dress Shirt",
+    "category": "clothing",
+    "description": "Non-iron dress shirt with spread collar and adjustable cuff.",
+    "price": 69.04,
+    "tags": [
+      "dress",
+      "shirt",
+      "formal"
+    ]
+  },
+  {
+    "product_id": "prod_0207",
+    "name": "Pull-Up Bar",
+    "category": "sports_gear",
+    "description": "Doorway pull-up bar with foam grips and multi-grip positions.",
+    "price": 30.74,
+    "tags": [
+      "pullup",
+      "bar",
+      "strength"
+    ]
+  },
+  {
+    "product_id": "prod_0366",
+    "name": "Elite Fluent Python",
+    "category": "books",
+    "description": "elite version of the popular fluent python with enhanced features.",
+    "price": 217.55,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0257",
+    "name": "Elite Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "elite version of the popular kettlebell 35lbs with enhanced features.",
+    "price": 219.85,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0233",
+    "name": "Deluxe Boxing Gloves",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular boxing gloves with enhanced features.",
+    "price": 389.71,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0099",
+    "name": "Crewneck Sweatshirt",
+    "category": "clothing",
+    "description": "Heavyweight crewneck sweatshirt with ribbed cuffs and hem.",
+    "price": 51.29,
+    "tags": [
+      "sweatshirt",
+      "crewneck",
+      "cotton"
+    ]
+  },
+  {
+    "product_id": "prod_0164",
+    "name": "Pro Chelsea Boots",
+    "category": "footwear",
+    "description": "pro version of the popular chelsea boots with enhanced features.",
+    "price": 452.47,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0137",
+    "name": "Trail Running Shoes",
+    "category": "footwear",
+    "description": "Trail running shoes with aggressive tread and rock plate protection.",
+    "price": 139.97,
+    "tags": [
+      "trail",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0105",
+    "name": "Running Quarter Zip",
+    "category": "clothing",
+    "description": "Quick-dry quarter-zip top with thumb holes and reflective details.",
+    "price": 61.64,
+    "tags": [
+      "quarterzip",
+      "running",
+      "performance"
+    ]
+  },
+  {
+    "product_id": "prod_0468",
+    "name": "Car Battery Charger",
+    "category": "automotive_accessories",
+    "description": "Smart battery charger with 6A output, desulfation mode, and reverse polarity protection.",
+    "price": 49.97,
+    "tags": [
+      "charger",
+      "battery",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0107",
+    "name": "Lace-Up Boots",
+    "category": "clothing",
+    "description": "Ankle boots with leather upper, lace-up front, and cushioned insole.",
+    "price": 129.36,
+    "tags": [
+      "boots",
+      "leather",
+      "ankle"
+    ]
+  },
+  {
+    "product_id": "prod_0254",
+    "name": "Deluxe Weight Bench",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular weight bench with enhanced features.",
+    "price": 490.78,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0437",
+    "name": "Premium Concealer Full Coverage",
+    "category": "beauty",
+    "description": "premium version of the popular concealer full coverage with enhanced features.",
+    "price": 488.86,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0381",
+    "name": "Deluxe The Cathedral and the Bazaar",
+    "category": "books",
+    "description": "deluxe version of the popular the cathedral and the bazaar with enhanced features.",
+    "price": 350.1,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0263",
+    "name": "Stick Vacuum Cleaner",
+    "category": "home_appliances",
+    "description": "Cordless stick vacuum with 45min run and wall-mountable charger.",
+    "price": 198.42,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0277",
+    "name": "Hand Blender",
+    "category": "home_appliances",
+    "description": "Immersion hand blender with 500W motor, whisk, and chopper attachment.",
+    "price": 33.35,
+    "tags": [
+      "blender",
+      "hand",
+      "immersion"
+    ]
+  },
+  {
+    "product_id": "prod_0242",
+    "name": "Premium Skipping Speed Rope",
+    "category": "sports_gear",
+    "description": "premium version of the popular skipping speed rope with enhanced features.",
+    "price": 398.0,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0383",
+    "name": "Elite Sapiens",
+    "category": "books",
+    "description": "elite version of the popular sapiens with enhanced features.",
+    "price": 18.04,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0268",
+    "name": "Humidifier 2.5L",
+    "category": "home_appliances",
+    "description": "Cool mist humidifier with night light, 25hr runtime, and auto shut-off.",
+    "price": 35.11,
+    "tags": [
+      "humidifier",
+      "mist",
+      "cool"
+    ]
+  },
+  {
+    "product_id": "prod_0048",
+    "name": "Baby Monitor",
+    "category": "electronics",
+    "description": "Video baby monitor with 5in screen, night vision, and temperature sensor.",
+    "price": 89.26,
+    "tags": [
+      "baby",
+      "monitor",
+      "video"
+    ]
+  },
+  {
+    "product_id": "prod_0168",
+    "name": "Premium Running Shoes",
+    "category": "footwear",
+    "description": "premium version of the popular running shoes with enhanced features.",
+    "price": 47.3,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0138",
+    "name": "Chelsea Boots",
+    "category": "footwear",
+    "description": "Suede Chelsea boots with elastic side panels and pull tab.",
+    "price": 149.3,
+    "tags": [
+      "boots",
+      "chelsea",
+      "suede"
+    ]
+  },
+  {
+    "product_id": "prod_0180",
+    "name": "Premium Slip-On Sneakers",
+    "category": "footwear",
+    "description": "premium version of the popular slip-on sneakers with enhanced features.",
+    "price": 240.12,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0116",
+    "name": "Mock Neck Top",
+    "category": "clothing",
+    "description": "Stretch mock neck top with long sleeves and fitted silhouette.",
+    "price": 33.07,
+    "tags": [
+      "top",
+      "mock",
+      "neck"
+    ]
+  },
+  {
+    "product_id": "prod_0020",
+    "name": "Surge Protector Power Strip",
+    "category": "electronics",
+    "description": "8-outlet surge protector with 2 USB ports and 6ft cord.",
+    "price": 26.74,
+    "tags": [
+      "surge",
+      "power",
+      "strip"
+    ]
+  },
+  {
+    "product_id": "prod_0106",
+    "name": "Waxed Canvas Jacket",
+    "category": "clothing",
+    "description": "Waxed canvas jacket with corduroy collar and brass hardware.",
+    "price": 199.7,
+    "tags": [
+      "jacket",
+      "waxed",
+      "canvas"
+    ]
+  },
+  {
+    "product_id": "prod_0098",
+    "name": "Trench Coat",
+    "category": "clothing",
+    "description": "Classic trench coat with epaulettes, storm flap, and belted waist.",
+    "price": 299.75,
+    "tags": [
+      "coat",
+      "trench",
+      "classic"
+    ]
+  },
+  {
+    "product_id": "prod_0156",
+    "name": "Premium Slip-On Sneakers",
+    "category": "footwear",
+    "description": "premium version of the popular slip-on sneakers with enhanced features.",
+    "price": 114.84,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0047",
+    "name": "Electric Toothbrush",
+    "category": "electronics",
+    "description": "Sonic electric toothbrush with 5 modes, 2-min timer, and USB-C charging.",
+    "price": 39.05,
+    "tags": [
+      "toothbrush",
+      "electric",
+      "sonic"
+    ]
+  },
+  {
+    "product_id": "prod_0377",
+    "name": "Pro Python Crash Course",
+    "category": "books",
+    "description": "pro version of the popular python crash course with enhanced features.",
+    "price": 48.17,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0071",
+    "name": "Cotton T-Shirt Pack 3",
+    "category": "clothing",
+    "description": "Percale cotton t-shirts with reinforced collar and double-stitched seams.",
+    "price": 39.39,
+    "tags": [
+      "tshirt",
+      "cotton",
+      "pack"
+    ]
+  },
+  {
+    "product_id": "prod_0118",
+    "name": "Safari Jacket",
+    "category": "clothing",
+    "description": "Cotton safari jacket with four pockets, belt, and epaulettes.",
+    "price": 120.19,
+    "tags": [
+      "jacket",
+      "safari",
+      "cotton"
+    ]
+  },
+  {
+    "product_id": "prod_0376",
+    "name": "Deluxe The Lean Startup",
+    "category": "books",
+    "description": "deluxe version of the popular the lean startup with enhanced features.",
+    "price": 78.32,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0152",
+    "name": "Elite Dress Oxfords",
+    "category": "footwear",
+    "description": "elite version of the popular dress oxfords with enhanced features.",
+    "price": 231.1,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0173",
+    "name": "Compact Chelsea Boots",
+    "category": "footwear",
+    "description": "compact version of the popular chelsea boots with enhanced features.",
+    "price": 108.7,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0052",
+    "name": "RFID Blocking Wallet",
+    "category": "electronics",
+    "description": "Slim RFID-blocking wallet with card slots and cash compartment.",
+    "price": 31.52,
+    "tags": [
+      "wallet",
+      "rfid",
+      "slim"
+    ]
+  },
+  {
+    "product_id": "prod_0121",
+    "name": "Work Coveralls",
+    "category": "clothing",
+    "description": "Cotton duck coveralls with multiple tool pockets and brass zipper.",
+    "price": 89.36,
+    "tags": [
+      "coveralls",
+      "work",
+      "durable"
+    ]
+  },
+  {
+    "product_id": "prod_0122",
+    "name": "Premium Yoga Pants",
+    "category": "clothing",
+    "description": "premium version of the popular yoga pants with enhanced features.",
+    "price": 303.34,
+    "tags": [
+      "casual",
+      "denim",
+      "jacket"
+    ]
+  },
+  {
+    "product_id": "prod_0189",
+    "name": "Premium Sandals",
+    "category": "footwear",
+    "description": "premium version of the popular sandals with enhanced features.",
+    "price": 217.84,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0371",
+    "name": "Essential Clean Code",
+    "category": "books",
+    "description": "essential version of the popular clean code with enhanced features.",
+    "price": 494.53,
+    "tags": [
+      "software",
+      "programming",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0313",
+    "name": "Deluxe Waffle Maker",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular waffle maker with enhanced features.",
+    "price": 227.9,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0063",
+    "name": "Bread Maker",
+    "category": "electronics",
+    "description": "Automatic bread maker with 12 programs, 3 crust colors, and 2lb loaf.",
+    "price": 80.53,
+    "tags": [
+      "bread",
+      "maker",
+      "baking"
+    ]
+  },
+  {
+    "product_id": "prod_0312",
+    "name": "Pro Electric Blanket",
+    "category": "home_appliances",
+    "description": "pro version of the popular electric blanket with enhanced features.",
+    "price": 221.73,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0423",
+    "name": "Compact Perfume Eau de Parfum",
+    "category": "beauty",
+    "description": "compact version of the popular perfume eau de parfum with enhanced features.",
+    "price": 296.98,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0141",
+    "name": "Dress Oxfords",
+    "category": "footwear",
+    "description": "Cap-toe oxford dress shoes with leather sole and Goodyear welt.",
+    "price": 200.12,
+    "tags": [
+      "oxfords",
+      "dress",
+      "leather"
+    ]
+  },
+  {
+    "product_id": "prod_0016",
+    "name": "Tablet Stand Holder",
+    "category": "electronics",
+    "description": "Adjustable tablet stand with 360-degree rotation and stable base.",
+    "price": 24.55,
+    "tags": [
+      "tablet",
+      "stand",
+      "holder"
+    ]
+  },
+  {
+    "product_id": "prod_0251",
+    "name": "Premium Push-Up Bars",
+    "category": "sports_gear",
+    "description": "premium version of the popular push-up bars with enhanced features.",
+    "price": 351.32,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0044",
+    "name": "Portable Scanner",
+    "category": "electronics",
+    "description": "Portable document scanner with WiFi, auto-feed, and OCR software.",
+    "price": 160.18,
+    "tags": [
+      "scanner",
+      "portable",
+      "document"
+    ]
+  },
+  {
+    "product_id": "prod_0108",
+    "name": "Wool Blazer",
+    "category": "clothing",
+    "description": "Herringbone wool blazer with patch pockets and double vent.",
+    "price": 248.15,
+    "tags": [
+      "blazer",
+      "wool",
+      "herringbone"
+    ]
+  },
+  {
+    "product_id": "prod_0053",
+    "name": "Phone Ring Holder",
+    "category": "electronics",
+    "description": "Adjustable phone ring holder with stand function and strong adhesive.",
+    "price": 5.94,
+    "tags": [
+      "holder",
+      "phone",
+      "ring"
+    ]
+  },
+  {
+    "product_id": "prod_0183",
+    "name": "Deluxe Slip-On Sneakers",
+    "category": "footwear",
+    "description": "deluxe version of the popular slip-on sneakers with enhanced features.",
+    "price": 60.06,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0007",
+    "name": "Portable Power Bank 20000mAh",
+    "category": "electronics",
+    "description": "High-capacity power bank with USB-C PD 65W and dual USB-A ports.",
+    "price": 43.78,
+    "tags": [
+      "power",
+      "portable",
+      "charging"
+    ]
+  },
+  {
+    "product_id": "prod_0179",
+    "name": "Deluxe Loafers",
+    "category": "footwear",
+    "description": "deluxe version of the popular loafers with enhanced features.",
+    "price": 62.73,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0241",
+    "name": "Pro Boxing Gloves",
+    "category": "sports_gear",
+    "description": "pro version of the popular boxing gloves with enhanced features.",
+    "price": 226.37,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0094",
+    "name": "Flannel Shirt",
+    "category": "clothing",
+    "description": "Brushed cotton flannel shirt with button-down collar and chest pocket.",
+    "price": 49.15,
+    "tags": [
+      "flannel",
+      "shirt",
+      "plaid"
+    ]
+  },
+  {
+    "product_id": "prod_0133",
+    "name": "Running Shoes",
+    "category": "footwear",
+    "description": "Neutral running shoes with responsive cushioning and breathable mesh upper.",
+    "price": 130.83,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0365",
+    "name": "Compact The Phoenix Project",
+    "category": "books",
+    "description": "compact version of the popular the phoenix project with enhanced features.",
+    "price": 236.62,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0445",
+    "name": "Compact Perfume Eau de Parfum",
+    "category": "beauty",
+    "description": "compact version of the popular perfume eau de parfum with enhanced features.",
+    "price": 181.46,
+    "tags": [
+      "vitaminc",
+      "skincare",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0227",
+    "name": "Deluxe Meditation Cushion",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular meditation cushion with enhanced features.",
+    "price": 449.02,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0209",
+    "name": "Meditation Cushion",
+    "category": "sports_gear",
+    "description": "Round meditation cushion with buckwheat fill and removable cover.",
+    "price": 39.38,
+    "tags": [
+      "meditation",
+      "cushion",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0398",
+    "name": "Lip Balm Pack",
+    "category": "beauty",
+    "description": "Pack of 4 tinted lip balms with shea butter and SPF 15.",
+    "price": 11.24,
+    "tags": [
+      "lip",
+      "balm",
+      "tinted"
+    ]
+  },
+  {
+    "product_id": "prod_0139",
+    "name": "Basketball Shoes",
+    "category": "footwear",
+    "description": "High-top basketball shoes with air cushioning and herringbone traction.",
+    "price": 161.43,
+    "tags": [
+      "basketball",
+      "shoes",
+      "high"
+    ]
+  },
+  {
+    "product_id": "prod_0074",
+    "name": "Leather Belt",
+    "category": "clothing",
+    "description": "Full-grain leather belt with brushed buckle and 35mm width.",
+    "price": 46.67,
+    "tags": [
+      "belt",
+      "leather",
+      "accessory"
+    ]
+  },
+  {
+    "product_id": "prod_0507",
+    "name": "Elite Third Brake Light Decal",
+    "category": "automotive_accessories",
+    "description": "elite version of the popular third brake light decal with enhanced features.",
+    "price": 477.94,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0215",
+    "name": "Gym Bag",
+    "category": "sports_gear",
+    "description": "Duffel gym bag with wet pocket, shoe compartment, and padded strap.",
+    "price": 46.59,
+    "tags": [
+      "bag",
+      "gym",
+      "duffel"
+    ]
+  },
+  {
+    "product_id": "prod_0184",
+    "name": "Essential Running Shoes",
+    "category": "footwear",
+    "description": "essential version of the popular running shoes with enhanced features.",
+    "price": 186.41,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0027",
+    "name": "Action Camera",
+    "category": "electronics",
+    "description": "4K action camera with image stabilization, waterproof to 10m, and WiFi.",
+    "price": 128.04,
+    "tags": [
+      "camera",
+      "action",
+      "4k"
+    ]
+  },
+  {
+    "product_id": "prod_0270",
+    "name": "Electric Blanket",
+    "category": "home_appliances",
+    "description": "Electric heated blanket with dual controls and auto shut-off.",
+    "price": 90.14,
+    "tags": [
+      "blanket",
+      "electric",
+      "heated"
+    ]
+  },
+  {
+    "product_id": "prod_0115",
+    "name": "Tech Vest",
+    "category": "clothing",
+    "description": "Travel vest with 12 pockets, RFID blocking, and wrinkle-free fabric.",
+    "price": 79.42,
+    "tags": [
+      "vest",
+      "tech",
+      "travel"
+    ]
+  },
+  {
+    "product_id": "prod_0323",
+    "name": "Elite Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "elite version of the popular dehumidifier 50pt with enhanced features.",
+    "price": 96.74,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0317",
+    "name": "Deluxe Food Dehydrator",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular food dehydrator with enhanced features.",
+    "price": 298.76,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0046",
+    "name": "Smart Light Bulb",
+    "category": "electronics",
+    "description": "WiFi smart bulb with 16M colors, dimmable, and voice control.",
+    "price": 13.75,
+    "tags": [
+      "light",
+      "smart",
+      "bulb"
+    ]
+  },
+  {
+    "product_id": "prod_0234",
+    "name": "Deluxe Gym Gloves",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular gym gloves with enhanced features.",
+    "price": 187.77,
+    "tags": [
+      "mat",
+      "fitness",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0219",
+    "name": "Essential Skipping Speed Rope",
+    "category": "sports_gear",
+    "description": "essential version of the popular skipping speed rope with enhanced features.",
+    "price": 473.56,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0359",
+    "name": "Deluxe The Great Gatsby",
+    "category": "books",
+    "description": "deluxe version of the popular the great gatsby with enhanced features.",
+    "price": 31.67,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0357",
+    "name": "Compact To Kill a Mockingbird",
+    "category": "books",
+    "description": "compact version of the popular to kill a mockingbird with enhanced features.",
+    "price": 40.69,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0367",
+    "name": "Premium 1984",
+    "category": "books",
+    "description": "premium version of the popular 1984 with enhanced features.",
+    "price": 352.0,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0111",
+    "name": "Yoga Pants",
+    "category": "clothing",
+    "description": "High-waist yoga pants with squat-proof fabric and hidden waistband pocket.",
+    "price": 61.47,
+    "tags": [
+      "yoga",
+      "pants",
+      "activewear"
+    ]
+  },
+  {
+    "product_id": "prod_0453",
+    "name": "Compact SPF 50 Sunscreen",
+    "category": "beauty",
+    "description": "compact version of the popular spf 50 sunscreen with enhanced features.",
+    "price": 153.76,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0253",
+    "name": "Premium Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "premium version of the popular kettlebell 35lbs with enhanced features.",
+    "price": 380.23,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0280",
+    "name": "Vacuum Sealer",
+    "category": "home_appliances",
+    "description": "Automatic vacuum sealer with built-in cutter and roll storage.",
+    "price": 44.08,
+    "tags": [
+      "sealer",
+      "vacuum",
+      "food"
+    ]
+  },
+  {
+    "product_id": "prod_0243",
+    "name": "Compact Pilates Ring",
+    "category": "sports_gear",
+    "description": "compact version of the popular pilates ring with enhanced features.",
+    "price": 184.49,
+    "tags": [
+      "fitness",
+      "mat",
+      "yoga"
+    ]
+  },
+  {
+    "product_id": "prod_0340",
+    "name": "Fluent Python",
+    "category": "books",
+    "description": "Clear, concise, and effective programming by Luciano Ramalho.",
+    "price": 38.18,
+    "tags": [
+      "python",
+      "advanced",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0408",
+    "name": "Under Eye Cream",
+    "category": "beauty",
+    "description": "Caffeine-infused under eye cream for dark circles and puffiness.",
+    "price": 23.73,
+    "tags": [
+      "eye",
+      "cream",
+      "caffeine"
+    ]
+  },
+  {
+    "product_id": "prod_0387",
+    "name": "Deluxe 1984",
+    "category": "books",
+    "description": "deluxe version of the popular 1984 with enhanced features.",
+    "price": 333.12,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0009",
+    "name": "Wireless Charging Pad",
+    "category": "electronics",
+    "description": "15W fast wireless charger with LED indicator and anti-slip surface.",
+    "price": 20.2,
+    "tags": [
+      "charger",
+      "wireless",
+      "qi"
+    ]
+  },
+  {
+    "product_id": "prod_0185",
+    "name": "Pro Sandals",
+    "category": "footwear",
+    "description": "pro version of the popular sandals with enhanced features.",
+    "price": 201.01,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0413",
+    "name": "Exfoliating Scrub",
+    "category": "beauty",
+    "description": "Sugar face scrub with jojoba beads and vitamin C for gentle exfoliation.",
+    "price": 17.61,
+    "tags": [
+      "scrub",
+      "exfoliating",
+      "face"
+    ]
+  },
+  {
+    "product_id": "prod_0012",
+    "name": "Laptop Stand Adjustable",
+    "category": "electronics",
+    "description": "Adjustable aluminum laptop stand with ventilation and cable management.",
+    "price": 40.17,
+    "tags": [
+      "stand",
+      "laptop",
+      "ergonomic"
+    ]
+  },
+  {
+    "product_id": "prod_0004",
+    "name": "USB-C Hub 7-in-1",
+    "category": "electronics",
+    "description": "Compact USB-C hub with HDMI, SD card, USB 3.0, and PD 100W charging.",
+    "price": 33.01,
+    "tags": [
+      "hub",
+      "usbc",
+      "accessories"
+    ]
+  },
+  {
+    "product_id": "prod_0150",
+    "name": "Elite Dress Oxfords",
+    "category": "footwear",
+    "description": "elite version of the popular dress oxfords with enhanced features.",
+    "price": 489.33,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0114",
+    "name": "Belted Cardigan",
+    "category": "clothing",
+    "description": "Longline cardigan with self-tie belt and side pockets.",
+    "price": 90.66,
+    "tags": [
+      "cardigan",
+      "belted",
+      "long"
+    ]
+  },
+  {
+    "product_id": "prod_0147",
+    "name": "Elite Basketball Shoes",
+    "category": "footwear",
+    "description": "elite version of the popular basketball shoes with enhanced features.",
+    "price": 387.13,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0201",
+    "name": "Foam Roller",
+    "category": "sports_gear",
+    "description": "High-density foam roller for muscle recovery and myofascial release.",
+    "price": 19.74,
+    "tags": [
+      "foam",
+      "roller",
+      "recovery"
+    ]
+  },
+  {
+    "product_id": "prod_0267",
+    "name": "Space Heater",
+    "category": "home_appliances",
+    "description": "Ceramic space heater with thermostat, tip-over shutoff, and 12hr timer.",
+    "price": 41.21,
+    "tags": [
+      "heater",
+      "space",
+      "ceramic"
+    ]
+  },
+  {
+    "product_id": "prod_0081",
+    "name": "Silk Tie",
+    "category": "clothing",
+    "description": "Handmade silk tie with self-tipped construction and 8cm width.",
+    "price": 36.65,
+    "tags": [
+      "tie",
+      "silk",
+      "formal"
+    ]
+  },
+  {
+    "product_id": "prod_0269",
+    "name": "Cordless Iron",
+    "category": "home_appliances",
+    "description": "Cordless steam iron with ceramic soleplate and 350ml water tank.",
+    "price": 61.89,
+    "tags": [
+      "iron",
+      "cordless",
+      "steam"
+    ]
+  },
+  {
+    "product_id": "prod_0050",
+    "name": "Car Phone Mount",
+    "category": "electronics",
+    "description": "Magnetic car phone mount with 360-degree rotation and one-hand operation.",
+    "price": 17.22,
+    "tags": [
+      "mount",
+      "car",
+      "phone"
+    ]
+  },
+  {
+    "product_id": "prod_0336",
+    "name": "Deep Work",
+    "category": "books",
+    "description": "Rules for focused success in a distracted world by Cal Newport.",
+    "price": 16.21,
+    "tags": [
+      "focus",
+      "productivity",
+      "work"
+    ]
+  },
+  {
+    "product_id": "prod_0167",
+    "name": "Pro Basketball Shoes",
+    "category": "footwear",
+    "description": "pro version of the popular basketball shoes with enhanced features.",
+    "price": 215.17,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0059",
+    "name": "Toaster 4-Slice",
+    "category": "electronics",
+    "description": "4-slice toaster with adjustable browning, defrost, and bagel settings.",
+    "price": 33.04,
+    "tags": [
+      "toaster",
+      "kitchen",
+      "appliance"
+    ]
+  },
+  {
+    "product_id": "prod_0125",
+    "name": "Elite Dress Shirt",
+    "category": "clothing",
+    "description": "elite version of the popular dress shirt with enhanced features.",
+    "price": 129.61,
+    "tags": [
+      "denim",
+      "jacket",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0489",
+    "name": "Premium Sun Shade",
+    "category": "automotive_accessories",
+    "description": "premium version of the popular sun shade with enhanced features.",
+    "price": 137.0,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0428",
+    "name": "Essential BB Cream",
+    "category": "beauty",
+    "description": "essential version of the popular bb cream with enhanced features.",
+    "price": 299.31,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0157",
+    "name": "Pro Canvas Sneakers",
+    "category": "footwear",
+    "description": "pro version of the popular canvas sneakers with enhanced features.",
+    "price": 389.11,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0321",
+    "name": "Deluxe Cordless Iron",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular cordless iron with enhanced features.",
+    "price": 70.19,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0101",
+    "name": "Henley Shirt",
+    "category": "clothing",
+    "description": "Long-sleeve henley shirt with button placket and ribbed cuffs.",
+    "price": 38.3,
+    "tags": [
+      "henley",
+      "shirt",
+      "longsleeve"
+    ]
+  },
+  {
+    "product_id": "prod_0435",
+    "name": "Elite Straightening Brush",
+    "category": "beauty",
+    "description": "elite version of the popular straightening brush with enhanced features.",
+    "price": 437.78,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0443",
+    "name": "Premium Lipstick Matte",
+    "category": "beauty",
+    "description": "premium version of the popular lipstick matte with enhanced features.",
+    "price": 50.53,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0392",
+    "name": "Deluxe Structure and Interpretation",
+    "category": "books",
+    "description": "deluxe version of the popular structure and interpretation with enhanced features.",
+    "price": 165.42,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0066",
+    "name": "Stand Mixer",
+    "category": "electronics",
+    "description": "5.5qt stand mixer with tilt-head, 12 speeds, and stainless steel bowl.",
+    "price": 251.55,
+    "tags": [
+      "mixer",
+      "stand",
+      "baking"
+    ]
+  },
+  {
+    "product_id": "prod_0372",
+    "name": "Elite The Pragmatic Programmer",
+    "category": "books",
+    "description": "elite version of the popular the pragmatic programmer with enhanced features.",
+    "price": 166.4,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0145",
+    "name": "Premium Canvas Sneakers",
+    "category": "footwear",
+    "description": "premium version of the popular canvas sneakers with enhanced features.",
+    "price": 451.08,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0293",
+    "name": "Deluxe Water Filter Pitcher",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular water filter pitcher with enhanced features.",
+    "price": 101.39,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0172",
+    "name": "Pro Hiking Boots",
+    "category": "footwear",
+    "description": "pro version of the popular hiking boots with enhanced features.",
+    "price": 119.11,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0154",
+    "name": "Elite Basketball Shoes",
+    "category": "footwear",
+    "description": "elite version of the popular basketball shoes with enhanced features.",
+    "price": 288.18,
+    "tags": [
+      "running",
+      "shoes",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0455",
+    "name": "Pro Perfume Eau de Parfum",
+    "category": "beauty",
+    "description": "pro version of the popular perfume eau de parfum with enhanced features.",
+    "price": 448.32,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0151",
+    "name": "Essential Loafers",
+    "category": "footwear",
+    "description": "essential version of the popular loafers with enhanced features.",
+    "price": 113.81,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0339",
+    "name": "Python Crash Course",
+    "category": "books",
+    "description": "Hands-on, project-based introduction to programming by Eric Matthes.",
+    "price": 29.04,
+    "tags": [
+      "python",
+      "programming",
+      "tutorial"
+    ]
+  },
+  {
+    "product_id": "prod_0494",
+    "name": "Deluxe Steering Wheel Cover",
+    "category": "automotive_accessories",
+    "description": "deluxe version of the popular steering wheel cover with enhanced features.",
+    "price": 50.19,
+    "tags": [
+      "portable",
+      "car",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0222",
+    "name": "Deluxe Meditation Cushion",
+    "category": "sports_gear",
+    "description": "deluxe version of the popular meditation cushion with enhanced features.",
+    "price": 270.39,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0338",
+    "name": "The Phoenix Project",
+    "category": "books",
+    "description": "A novel about IT, DevOps, and helping your business win.",
+    "price": 20.25,
+    "tags": [
+      "devops",
+      "it",
+      "fiction"
+    ]
+  },
+  {
+    "product_id": "prod_0129",
+    "name": "Premium Cashmere Scarf",
+    "category": "clothing",
+    "description": "premium version of the popular cashmere scarf with enhanced features.",
+    "price": 63.11,
+    "tags": [
+      "jacket",
+      "denim",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0216",
+    "name": "Boxing Gloves",
+    "category": "sports_gear",
+    "description": "Leather boxing gloves with wrist support and ventilation palm.",
+    "price": 60.86,
+    "tags": [
+      "boxing",
+      "gloves",
+      "leather"
+    ]
+  },
+  {
+    "product_id": "prod_0067",
+    "name": "Espresso Machine",
+    "category": "electronics",
+    "description": "15-bar espresso machine with steam wand, removable water tank, and cup warmer.",
+    "price": 179.55,
+    "tags": [
+      "espresso",
+      "coffee",
+      "machine"
+    ]
+  },
+  {
+    "product_id": "prod_0211",
+    "name": "Skipping Speed Rope",
+    "category": "sports_gear",
+    "description": "Lightweight speed rope with swivel bearings for double unders.",
+    "price": 8.11,
+    "tags": [
+      "rope",
+      "speed",
+      "cardio"
+    ]
+  },
+  {
+    "product_id": "prod_0226",
+    "name": "Essential Push-Up Bars",
+    "category": "sports_gear",
+    "description": "essential version of the popular push-up bars with enhanced features.",
+    "price": 365.27,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0432",
+    "name": "Compact Lip Balm Pack",
+    "category": "beauty",
+    "description": "compact version of the popular lip balm pack with enhanced features.",
+    "price": 191.7,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0043",
+    "name": "Digital Alarm Clock",
+    "category": "electronics",
+    "description": "Digital alarm clock with large display, USB charging, and gradual wake light.",
+    "price": 23.53,
+    "tags": [
+      "clock",
+      "alarm",
+      "digital"
+    ]
+  },
+  {
+    "product_id": "prod_0434",
+    "name": "Premium BB Cream",
+    "category": "beauty",
+    "description": "premium version of the popular bb cream with enhanced features.",
+    "price": 307.8,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0297",
+    "name": "Elite Dehumidifier 50pt",
+    "category": "home_appliances",
+    "description": "elite version of the popular dehumidifier 50pt with enhanced features.",
+    "price": 163.91,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0005",
+    "name": "Noise Cancelling Headphones",
+    "category": "electronics",
+    "description": "Over-ear ANC headphones with 40hr battery and fold-flat design.",
+    "price": 251.96,
+    "tags": [
+      "headphones",
+      "anc",
+      "audio"
+    ]
+  },
+  {
+    "product_id": "prod_0095",
+    "name": "Chambray Shirt",
+    "category": "clothing",
+    "description": "Lightweight chambray shirt with barrel cuffs and curved hem.",
+    "price": 54.81,
+    "tags": [
+      "chambray",
+      "shirt",
+      "lightweight"
+    ]
+  },
+  {
+    "product_id": "prod_0418",
+    "name": "Deluxe Vitamin C Serum",
+    "category": "beauty",
+    "description": "deluxe version of the popular vitamin c serum with enhanced features.",
+    "price": 12.74,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0221",
+    "name": "Premium Adjustable Dumbbells",
+    "category": "sports_gear",
+    "description": "premium version of the popular adjustable dumbbells with enhanced features.",
+    "price": 32.37,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0441",
+    "name": "Deluxe Under Eye Cream",
+    "category": "beauty",
+    "description": "deluxe version of the popular under eye cream with enhanced features.",
+    "price": 51.91,
+    "tags": [
+      "skincare",
+      "serum",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0124",
+    "name": "Elite V-Neck Sweater",
+    "category": "clothing",
+    "description": "elite version of the popular v-neck sweater with enhanced features.",
+    "price": 397.98,
+    "tags": [
+      "casual",
+      "denim",
+      "jacket"
+    ]
+  },
+  {
+    "product_id": "prod_0360",
+    "name": "Elite Atomic Habits",
+    "category": "books",
+    "description": "elite version of the popular atomic habits with enhanced features.",
+    "price": 499.8,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0311",
+    "name": "Essential Toaster Oven",
+    "category": "home_appliances",
+    "description": "essential version of the popular toaster oven with enhanced features.",
+    "price": 198.3,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0197",
+    "name": "Elite Chelsea Boots",
+    "category": "footwear",
+    "description": "elite version of the popular chelsea boots with enhanced features.",
+    "price": 19.42,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0356",
+    "name": "Elite Designing Data-Intensive Applications",
+    "category": "books",
+    "description": "elite version of the popular designing data-intensive applications with enhanced features.",
+    "price": 255.24,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0286",
+    "name": "Essential Coffee Grinder",
+    "category": "home_appliances",
+    "description": "essential version of the popular coffee grinder with enhanced features.",
+    "price": 235.86,
+    "tags": [
+      "stick",
+      "cordless",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0446",
+    "name": "Deluxe Hyaluronic Acid Toner",
+    "category": "beauty",
+    "description": "deluxe version of the popular hyaluronic acid toner with enhanced features.",
+    "price": 202.89,
+    "tags": [
+      "vitaminc",
+      "serum",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0229",
+    "name": "Pro Resistance Bands Set",
+    "category": "sports_gear",
+    "description": "pro version of the popular resistance bands set with enhanced features.",
+    "price": 476.38,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0285",
+    "name": "Deluxe Sewing Machine",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular sewing machine with enhanced features.",
+    "price": 404.25,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0210",
+    "name": "Weight Bench",
+    "category": "sports_gear",
+    "description": "Adjustable weight bench with 7 positions and 600lb capacity.",
+    "price": 178.44,
+    "tags": [
+      "bench",
+      "weight",
+      "adjustable"
+    ]
+  },
+  {
+    "product_id": "prod_0304",
+    "name": "Elite Water Filter Pitcher",
+    "category": "home_appliances",
+    "description": "elite version of the popular water filter pitcher with enhanced features.",
+    "price": 77.54,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0062",
+    "name": "Electric Griddle",
+    "category": "electronics",
+    "description": "Non-stick electric griddle with adjustable temp and 12x20in cooking surface.",
+    "price": 41.7,
+    "tags": [
+      "griddle",
+      "electric",
+      "cooking"
+    ]
+  },
+  {
+    "product_id": "prod_0440",
+    "name": "Deluxe Beard Oil Kit",
+    "category": "beauty",
+    "description": "deluxe version of the popular beard oil kit with enhanced features.",
+    "price": 180.55,
+    "tags": [
+      "serum",
+      "vitaminc",
+      "skincare"
+    ]
+  },
+  {
+    "product_id": "prod_0430",
+    "name": "Compact Hyaluronic Acid Toner",
+    "category": "beauty",
+    "description": "compact version of the popular hyaluronic acid toner with enhanced features.",
+    "price": 34.95,
+    "tags": [
+      "serum",
+      "skincare",
+      "vitaminc"
+    ]
+  },
+  {
+    "product_id": "prod_0130",
+    "name": "Premium Crewneck Sweatshirt",
+    "category": "clothing",
+    "description": "premium version of the popular crewneck sweatshirt with enhanced features.",
+    "price": 131.67,
+    "tags": [
+      "casual",
+      "denim",
+      "jacket"
+    ]
+  },
+  {
+    "product_id": "prod_0155",
+    "name": "Deluxe Canvas Sneakers",
+    "category": "footwear",
+    "description": "deluxe version of the popular canvas sneakers with enhanced features.",
+    "price": 74.69,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0093",
+    "name": "Bomber Jacket",
+    "category": "clothing",
+    "description": "Nylon bomber jacket with ribbed cuffs, waistband, and quilted lining.",
+    "price": 148.53,
+    "tags": [
+      "jacket",
+      "bomber",
+      "nylon"
+    ]
+  },
+  {
+    "product_id": "prod_0492",
+    "name": "Essential Seat Cushion Cover Set",
+    "category": "automotive_accessories",
+    "description": "essential version of the popular seat cushion cover set with enhanced features.",
+    "price": 276.91,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0194",
+    "name": "Deluxe Loafers",
+    "category": "footwear",
+    "description": "deluxe version of the popular loafers with enhanced features.",
+    "price": 418.32,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0238",
+    "name": "Elite Push-Up Bars",
+    "category": "sports_gear",
+    "description": "elite version of the popular push-up bars with enhanced features.",
+    "price": 47.7,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0092",
+    "name": "Canvas Belt",
+    "category": "clothing",
+    "description": "Cotton canvas belt with brass buckle and contrast stripe.",
+    "price": 31.27,
+    "tags": [
+      "belt",
+      "canvas",
+      "casual"
+    ]
+  },
+  {
+    "product_id": "prod_0282",
+    "name": "Water Filter Pitcher",
+    "category": "home_appliances",
+    "description": "10-cup water filter pitcher with activated carbon filter and LED indicator.",
+    "price": 28.13,
+    "tags": [
+      "filter",
+      "water",
+      "pitcher"
+    ]
+  },
+  {
+    "product_id": "prod_0473",
+    "name": "Car Air Purifier",
+    "category": "automotive_accessories",
+    "description": "Car air purifier with HEPA filter, negative ion generator, and quiet fan.",
+    "price": 39.83,
+    "tags": [
+      "purifier",
+      "air",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0217",
+    "name": "Pilates Ring",
+    "category": "sports_gear",
+    "description": "Pilates resistance ring with padded handles and body sculpting exercises.",
+    "price": 18.66,
+    "tags": [
+      "pilates",
+      "ring",
+      "resistance"
+    ]
+  },
+  {
+    "product_id": "prod_0102",
+    "name": "Quilted Vest",
+    "category": "clothing",
+    "description": "Quilted nylon vest with diamond pattern and zip pockets.",
+    "price": 91.62,
+    "tags": [
+      "vest",
+      "quilted",
+      "insulated"
+    ]
+  },
+  {
+    "product_id": "prod_0374",
+    "name": "Pro The Art of War",
+    "category": "books",
+    "description": "pro version of the popular the art of war with enhanced features.",
+    "price": 347.85,
+    "tags": [
+      "programming",
+      "software",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0195",
+    "name": "Premium Slip-On Sneakers",
+    "category": "footwear",
+    "description": "premium version of the popular slip-on sneakers with enhanced features.",
+    "price": 382.48,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0403",
+    "name": "Hair Dryer Ionic",
+    "category": "beauty",
+    "description": "Ionic hair dryer with 3 heat settings, concentrator, and diffuser.",
+    "price": 50.18,
+    "tags": [
+      "hair",
+      "dryer",
+      "ionic"
+    ]
+  },
+  {
+    "product_id": "prod_0491",
+    "name": "Deluxe Rear View Mirror Camera",
+    "category": "automotive_accessories",
+    "description": "deluxe version of the popular rear view mirror camera with enhanced features.",
+    "price": 369.99,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0353",
+    "name": "Deluxe Python Crash Course",
+    "category": "books",
+    "description": "deluxe version of the popular python crash course with enhanced features.",
+    "price": 47.38,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0041",
+    "name": "Dash Cam 4K",
+    "category": "electronics",
+    "description": "4K dash cam with night vision, wide angle, and parking monitor.",
+    "price": 100.84,
+    "tags": [
+      "dashcam",
+      "4k",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0246",
+    "name": "Essential Kettlebell 35lbs",
+    "category": "sports_gear",
+    "description": "essential version of the popular kettlebell 35lbs with enhanced features.",
+    "price": 223.05,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0474",
+    "name": "Seat Gap Filler",
+    "category": "automotive_accessories",
+    "description": "Car seat gap filler and organizer with storage pockets for both sides.",
+    "price": 12.93,
+    "tags": [
+      "gap",
+      "filler",
+      "organizer"
+    ]
+  },
+  {
+    "product_id": "prod_0465",
+    "name": "OBD2 Scanner",
+    "category": "automotive_accessories",
+    "description": "Bluetooth OBD2 scanner with engine diagnostics smartphone app.",
+    "price": 28.13,
+    "tags": [
+      "obd2",
+      "scanner",
+      "diagnostic"
+    ]
+  },
+  {
+    "product_id": "prod_0315",
+    "name": "Compact Humidifier 2.5L",
+    "category": "home_appliances",
+    "description": "compact version of the popular humidifier 2.5l with enhanced features.",
+    "price": 175.2,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0220",
+    "name": "Premium Exercise Bike",
+    "category": "sports_gear",
+    "description": "premium version of the popular exercise bike with enhanced features.",
+    "price": 195.43,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0127",
+    "name": "Deluxe Bomber Jacket",
+    "category": "clothing",
+    "description": "deluxe version of the popular bomber jacket with enhanced features.",
+    "price": 481.43,
+    "tags": [
+      "casual",
+      "denim",
+      "jacket"
+    ]
+  },
+  {
+    "product_id": "prod_0026",
+    "name": "Laptop Backpack",
+    "category": "electronics",
+    "description": "Water-resistant laptop backpack with USB charging port and anti-theft pocket.",
+    "price": 55.13,
+    "tags": [
+      "backpack",
+      "laptop",
+      "travel"
+    ]
+  },
+  {
+    "product_id": "prod_0310",
+    "name": "Pro Electric Can Opener",
+    "category": "home_appliances",
+    "description": "pro version of the popular electric can opener with enhanced features.",
+    "price": 251.93,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0089",
+    "name": "Performance Polo",
+    "category": "clothing",
+    "description": "Moisture-wicking performance polo with stretch and UPF 50+.",
+    "price": 54.99,
+    "tags": [
+      "polo",
+      "performance",
+      "sports"
+    ]
+  },
+  {
+    "product_id": "prod_0294",
+    "name": "Pro Coffee Grinder",
+    "category": "home_appliances",
+    "description": "pro version of the popular coffee grinder with enhanced features.",
+    "price": 250.35,
+    "tags": [
+      "vacuum",
+      "stick",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0160",
+    "name": "Compact Trail Running Shoes",
+    "category": "footwear",
+    "description": "compact version of the popular trail running shoes with enhanced features.",
+    "price": 268.31,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0175",
+    "name": "Elite Running Shoes",
+    "category": "footwear",
+    "description": "elite version of the popular running shoes with enhanced features.",
+    "price": 181.51,
+    "tags": [
+      "running",
+      "cushioning",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0080",
+    "name": "Hooded Zip Sweatshirt",
+    "category": "clothing",
+    "description": "Midweight zip hoodie with fleece lining and kangaroo pocket.",
+    "price": 61.89,
+    "tags": [
+      "hoodie",
+      "zip",
+      "fleece"
+    ]
+  },
+  {
+    "product_id": "prod_0013",
+    "name": "Smart Plug WiFi",
+    "category": "electronics",
+    "description": "WiFi smart plug with energy monitoring and voice assistant support.",
+    "price": 14.01,
+    "tags": [
+      "smart",
+      "plug",
+      "wifi"
+    ]
+  },
+  {
+    "product_id": "prod_0394",
+    "name": "Retinol Moisturizer",
+    "category": "beauty",
+    "description": "Night cream with retinol and peptides for anti-aging and renewal.",
+    "price": 34.72,
+    "tags": [
+      "retinol",
+      "moisturizer",
+      "night"
+    ]
+  },
+  {
+    "product_id": "prod_0388",
+    "name": "Elite The Cathedral and the Bazaar",
+    "category": "books",
+    "description": "elite version of the popular the cathedral and the bazaar with enhanced features.",
+    "price": 66.09,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0444",
+    "name": "Essential Nail Polish Set",
+    "category": "beauty",
+    "description": "essential version of the popular nail polish set with enhanced features.",
+    "price": 107.15,
+    "tags": [
+      "skincare",
+      "vitaminc",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0018",
+    "name": "Graphics Drawing Tablet",
+    "category": "electronics",
+    "description": "Drawing tablet with 8192 pressure levels and wireless connectivity.",
+    "price": 200.4,
+    "tags": [
+      "drawing",
+      "tablet",
+      "graphics"
+    ]
+  },
+  {
+    "product_id": "prod_0401",
+    "name": "Makeup Brush Set",
+    "category": "beauty",
+    "description": "Set of 12 synthetic makeup brushes with case for all face and eye looks.",
+    "price": 39.49,
+    "tags": [
+      "brushes",
+      "makeup",
+      "set"
+    ]
+  },
+  {
+    "product_id": "prod_0477",
+    "name": "Backup Camera",
+    "category": "automotive_accessories",
+    "description": "Wireless backup camera with night vision, 170-degree angle, and monitor.",
+    "price": 71.73,
+    "tags": [
+      "camera",
+      "backup",
+      "safety"
+    ]
+  },
+  {
+    "product_id": "prod_0190",
+    "name": "Pro Dress Oxfords",
+    "category": "footwear",
+    "description": "pro version of the popular dress oxfords with enhanced features.",
+    "price": 109.13,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0300",
+    "name": "Premium Toaster Oven",
+    "category": "home_appliances",
+    "description": "premium version of the popular toaster oven with enhanced features.",
+    "price": 249.58,
+    "tags": [
+      "vacuum",
+      "cordless",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0024",
+    "name": "USB Microphone",
+    "category": "electronics",
+    "description": "Condenser USB microphone with cardioid pattern and mute button.",
+    "price": 49.99,
+    "tags": [
+      "microphone",
+      "usb",
+      "podcast"
+    ]
+  },
+  {
+    "product_id": "prod_0484",
+    "name": "Essential Third Brake Light Decal",
+    "category": "automotive_accessories",
+    "description": "essential version of the popular third brake light decal with enhanced features.",
+    "price": 362.17,
+    "tags": [
+      "vacuum",
+      "portable",
+      "car"
+    ]
+  },
+  {
+    "product_id": "prod_0023",
+    "name": "Wireless Mouse",
+    "category": "electronics",
+    "description": "Slim wireless mouse with silent clicks and USB-C rechargeable.",
+    "price": 18.59,
+    "tags": [
+      "mouse",
+      "wireless",
+      "slim"
+    ]
+  },
+  {
+    "product_id": "prod_0021",
+    "name": "Fitness Tracker Watch",
+    "category": "electronics",
+    "description": "Fitness smartwatch with heart rate, SpO2, GPS, and 7-day battery.",
+    "price": 88.17,
+    "tags": [
+      "fitness",
+      "watch",
+      "tracker"
+    ]
+  },
+  {
+    "product_id": "prod_0464",
+    "name": "LED Interior Lights",
+    "category": "automotive_accessories",
+    "description": "RGB LED car interior strip lights with app control and music sync.",
+    "price": 24.43,
+    "tags": [
+      "led",
+      "lights",
+      "interior"
+    ]
+  },
+  {
+    "product_id": "prod_0146",
+    "name": "Essential Dress Oxfords",
+    "category": "footwear",
+    "description": "essential version of the popular dress oxfords with enhanced features.",
+    "price": 315.06,
+    "tags": [
+      "shoes",
+      "cushioning",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0038",
+    "name": "Laptop Cooling Pad",
+    "category": "electronics",
+    "description": "Laptop cooling pad with dual fans, adjustable height, and USB powered.",
+    "price": 36.95,
+    "tags": [
+      "cooling",
+      "laptop",
+      "pad"
+    ]
+  },
+  {
+    "product_id": "prod_0252",
+    "name": "Pro Sweat Towel",
+    "category": "sports_gear",
+    "description": "pro version of the popular sweat towel with enhanced features.",
+    "price": 427.0,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0037",
+    "name": "USB Hub 4-Port",
+    "category": "electronics",
+    "description": "Ultra-slim USB 3.0 hub with 4 ports and 5Gbps transfer speed.",
+    "price": 13.04,
+    "tags": [
+      "usb",
+      "hub",
+      "port"
+    ]
+  },
+  {
+    "product_id": "prod_0143",
+    "name": "Elite Hiking Boots",
+    "category": "footwear",
+    "description": "elite version of the popular hiking boots with enhanced features.",
+    "price": 422.68,
+    "tags": [
+      "cushioning",
+      "running",
+      "shoes"
+    ]
+  },
+  {
+    "product_id": "prod_0144",
+    "name": "Elite Loafers",
+    "category": "footwear",
+    "description": "elite version of the popular loafers with enhanced features.",
+    "price": 373.97,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0506",
+    "name": "Essential Car Emergency Kit",
+    "category": "automotive_accessories",
+    "description": "essential version of the popular car emergency kit with enhanced features.",
+    "price": 26.26,
+    "tags": [
+      "car",
+      "portable",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0305",
+    "name": "Deluxe Electric Can Opener",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular electric can opener with enhanced features.",
+    "price": 329.89,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  },
+  {
+    "product_id": "prod_0391",
+    "name": "Compact Deep Work",
+    "category": "books",
+    "description": "compact version of the popular deep work with enhanced features.",
+    "price": 197.82,
+    "tags": [
+      "software",
+      "programming",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0072",
+    "name": "Waterproof Rain Jacket",
+    "category": "clothing",
+    "description": "Seam-sealed waterproof rain jacket with hood and packable design.",
+    "price": 119.07,
+    "tags": [
+      "jacket",
+      "rain",
+      "waterproof"
+    ]
+  },
+  {
+    "product_id": "prod_0409",
+    "name": "Hair Mask Deep Conditioner",
+    "category": "beauty",
+    "description": "Deep conditioning hair mask with argan oil and keratin for damaged hair.",
+    "price": 20.04,
+    "tags": [
+      "hair",
+      "mask",
+      "conditioner"
+    ]
+  },
+  {
+    "product_id": "prod_0386",
+    "name": "Premium The Lean Startup",
+    "category": "books",
+    "description": "premium version of the popular the lean startup with enhanced features.",
+    "price": 12.9,
+    "tags": [
+      "craft",
+      "programming",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0008",
+    "name": "Webcam 4K Streaming",
+    "category": "electronics",
+    "description": "4K webcam with auto-focus, built-in ring light, and noise-reducing mic.",
+    "price": 119.98,
+    "tags": [
+      "webcam",
+      "4k",
+      "streaming"
+    ]
+  },
+  {
+    "product_id": "prod_0169",
+    "name": "Essential Canvas Sneakers",
+    "category": "footwear",
+    "description": "essential version of the popular canvas sneakers with enhanced features.",
+    "price": 136.08,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0011",
+    "name": "Ergonomic Vertical Mouse",
+    "category": "electronics",
+    "description": "Vertical wireless mouse with 6 buttons and adjustable DPI up to 4000.",
+    "price": 30.42,
+    "tags": [
+      "mouse",
+      "ergonomic",
+      "wireless"
+    ]
+  },
+  {
+    "product_id": "prod_0260",
+    "name": "Premium Sweat Towel",
+    "category": "sports_gear",
+    "description": "premium version of the popular sweat towel with enhanced features.",
+    "price": 129.3,
+    "tags": [
+      "mat",
+      "yoga",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0015",
+    "name": "LED Desk Lamp",
+    "category": "electronics",
+    "description": "Touch-controlled LED desk lamp with 5 brightness levels and USB charging.",
+    "price": 32.86,
+    "tags": [
+      "lamp",
+      "led",
+      "desk"
+    ]
+  },
+  {
+    "product_id": "prod_0212",
+    "name": "Gym Gloves",
+    "category": "sports_gear",
+    "description": "Ventilated gym gloves with wrist wrap and gel padding.",
+    "price": 19.31,
+    "tags": [
+      "gloves",
+      "gym",
+      "lifting"
+    ]
+  },
+  {
+    "product_id": "prod_0358",
+    "name": "Compact G\u00f6del Escher Bach",
+    "category": "books",
+    "description": "compact version of the popular g\u00f6del escher bach with enhanced features.",
+    "price": 241.74,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0163",
+    "name": "Compact Canvas Sneakers",
+    "category": "footwear",
+    "description": "compact version of the popular canvas sneakers with enhanced features.",
+    "price": 213.66,
+    "tags": [
+      "shoes",
+      "running",
+      "cushioning"
+    ]
+  },
+  {
+    "product_id": "prod_0126",
+    "name": "Pro Canvas Belt",
+    "category": "clothing",
+    "description": "pro version of the popular canvas belt with enhanced features.",
+    "price": 241.3,
+    "tags": [
+      "denim",
+      "casual",
+      "jacket"
+    ]
+  },
+  {
+    "product_id": "prod_0482",
+    "name": "Third Brake Light Decal",
+    "category": "automotive_accessories",
+    "description": "Custom third brake light decal with LED illumination and weatherproof material.",
+    "price": 11.55,
+    "tags": [
+      "decal",
+      "brake",
+      "light"
+    ]
+  },
+  {
+    "product_id": "prod_0337",
+    "name": "Zero to One",
+    "category": "books",
+    "description": "Notes on startups, or how to build the future by Peter Thiel.",
+    "price": 19.21,
+    "tags": [
+      "startup",
+      "innovation",
+      "entrepreneurship"
+    ]
+  },
+  {
+    "product_id": "prod_0499",
+    "name": "Pro Car Phone Mount",
+    "category": "automotive_accessories",
+    "description": "pro version of the popular car phone mount with enhanced features.",
+    "price": 19.94,
+    "tags": [
+      "car",
+      "vacuum",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0379",
+    "name": "Deluxe Python Crash Course",
+    "category": "books",
+    "description": "deluxe version of the popular python crash course with enhanced features.",
+    "price": 397.79,
+    "tags": [
+      "craft",
+      "software",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0415",
+    "name": "Heat Protectant Spray",
+    "category": "beauty",
+    "description": "Heat protectant spray for hair up to 450F with argan oil and silk proteins.",
+    "price": 13.33,
+    "tags": [
+      "heat",
+      "protectant",
+      "hair"
+    ]
+  },
+  {
+    "product_id": "prod_0396",
+    "name": "Hyaluronic Acid Toner",
+    "category": "beauty",
+    "description": "Hydrating toner with hyaluronic acid, niacinamide, and panthenol.",
+    "price": 18.11,
+    "tags": [
+      "toner",
+      "hyaluronic",
+      "hydrating"
+    ]
+  },
+  {
+    "product_id": "prod_0448",
+    "name": "Premium Face Mask Sheet Set",
+    "category": "beauty",
+    "description": "premium version of the popular face mask sheet set with enhanced features.",
+    "price": 392.18,
+    "tags": [
+      "skincare",
+      "vitaminc",
+      "serum"
+    ]
+  },
+  {
+    "product_id": "prod_0228",
+    "name": "Elite Sweat Towel",
+    "category": "sports_gear",
+    "description": "elite version of the popular sweat towel with enhanced features.",
+    "price": 109.84,
+    "tags": [
+      "yoga",
+      "mat",
+      "fitness"
+    ]
+  },
+  {
+    "product_id": "prod_0162",
+    "name": "Deluxe Hiking Boots",
+    "category": "footwear",
+    "description": "deluxe version of the popular hiking boots with enhanced features.",
+    "price": 208.51,
+    "tags": [
+      "cushioning",
+      "shoes",
+      "running"
+    ]
+  },
+  {
+    "product_id": "prod_0390",
+    "name": "Pro Deep Work",
+    "category": "books",
+    "description": "pro version of the popular deep work with enhanced features.",
+    "price": 87.9,
+    "tags": [
+      "software",
+      "programming",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0113",
+    "name": "Camp Collar Shirt",
+    "category": "clothing",
+    "description": "Relaxed camp collar shirt with tropical print and chest pocket.",
+    "price": 44.45,
+    "tags": [
+      "shirt",
+      "camp",
+      "collar"
+    ]
+  },
+  {
+    "product_id": "prod_0382",
+    "name": "Elite G\u00f6del Escher Bach",
+    "category": "books",
+    "description": "elite version of the popular g\u00f6del escher bach with enhanced features.",
+    "price": 488.5,
+    "tags": [
+      "programming",
+      "craft",
+      "software"
+    ]
+  },
+  {
+    "product_id": "prod_0330",
+    "name": "Designing Data-Intensive Applications",
+    "category": "books",
+    "description": "Reliable, scalable, maintainable systems by Martin Kleppmann.",
+    "price": 43.77,
+    "tags": [
+      "data",
+      "systems",
+      "architecture"
+    ]
+  },
+  {
+    "product_id": "prod_0223",
+    "name": "Essential Gym Bag",
+    "category": "sports_gear",
+    "description": "essential version of the popular gym bag with enhanced features.",
+    "price": 469.03,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0332",
+    "name": "The Lean Startup",
+    "category": "books",
+    "description": "How today's entrepreneurs use continuous innovation by Eric Ries.",
+    "price": 25.46,
+    "tags": [
+      "business",
+      "startup",
+      "lean"
+    ]
+  },
+  {
+    "product_id": "prod_0206",
+    "name": "Exercise Bike",
+    "category": "sports_gear",
+    "description": "Magnetic resistance exercise bike with LCD display and tablet holder.",
+    "price": 250.33,
+    "tags": [
+      "bike",
+      "exercise",
+      "cardio"
+    ]
+  },
+  {
+    "product_id": "prod_0060",
+    "name": "Slow Cooker 6qt",
+    "category": "electronics",
+    "description": "6-quart slow cooker with programmable timer and 3 heat settings.",
+    "price": 51.4,
+    "tags": [
+      "cooker",
+      "slow",
+      "kitchen"
+    ]
+  },
+  {
+    "product_id": "prod_0349",
+    "name": "Deluxe Clean Code",
+    "category": "books",
+    "description": "deluxe version of the popular clean code with enhanced features.",
+    "price": 404.9,
+    "tags": [
+      "software",
+      "programming",
+      "craft"
+    ]
+  },
+  {
+    "product_id": "prod_0354",
+    "name": "Compact The Cathedral and the Bazaar",
+    "category": "books",
+    "description": "compact version of the popular the cathedral and the bazaar with enhanced features.",
+    "price": 301.91,
+    "tags": [
+      "software",
+      "craft",
+      "programming"
+    ]
+  },
+  {
+    "product_id": "prod_0259",
+    "name": "Elite Pilates Ring",
+    "category": "sports_gear",
+    "description": "elite version of the popular pilates ring with enhanced features.",
+    "price": 177.13,
+    "tags": [
+      "fitness",
+      "yoga",
+      "mat"
+    ]
+  },
+  {
+    "product_id": "prod_0306",
+    "name": "Premium Electric Can Opener",
+    "category": "home_appliances",
+    "description": "premium version of the popular electric can opener with enhanced features.",
+    "price": 74.48,
+    "tags": [
+      "cordless",
+      "vacuum",
+      "stick"
+    ]
+  },
+  {
+    "product_id": "prod_0075",
+    "name": "Linen Shirt",
+    "category": "clothing",
+    "description": "Relaxed-fit linen shirt with button-down collar and chest pocket.",
+    "price": 65.42,
+    "tags": [
+      "shirt",
+      "linen",
+      "summer"
+    ]
+  },
+  {
+    "product_id": "prod_0017",
+    "name": "Portable Bluetooth Speaker",
+    "category": "electronics",
+    "description": "Waterproof portable speaker with 20hr playtime and deep bass.",
+    "price": 60.89,
+    "tags": [
+      "speaker",
+      "bluetooth",
+      "portable"
+    ]
+  },
+  {
+    "product_id": "prod_0302",
+    "name": "Pro Ice Maker",
+    "category": "home_appliances",
+    "description": "pro version of the popular ice maker with enhanced features.",
+    "price": 461.1,
+    "tags": [
+      "stick",
+      "vacuum",
+      "cordless"
+    ]
+  },
+  {
+    "product_id": "prod_0091",
+    "name": "Leather Gloves",
+    "category": "clothing",
+    "description": "Genuine leather gloves with touchscreen fingertips and cashmere lining.",
+    "price": 56.46,
+    "tags": [
+      "gloves",
+      "leather",
+      "winter"
+    ]
+  },
+  {
+    "product_id": "prod_0395",
+    "name": "SPF 50 Sunscreen",
+    "category": "beauty",
+    "description": "Broad-spectrum SPF 50 sunscreen with zinc oxide and aloe vera.",
+    "price": 19.41,
+    "tags": [
+      "sunscreen",
+      "spf",
+      "protection"
+    ]
+  },
+  {
+    "product_id": "prod_0097",
+    "name": "Athletic Shorts",
+    "category": "clothing",
+    "description": "Quick-dry athletic shorts with built-in brief and zip pocket.",
+    "price": 31.34,
+    "tags": [
+      "shorts",
+      "athletic",
+      "gym"
+    ]
+  },
+  {
+    "product_id": "prod_0333",
+    "name": "Sapiens",
+    "category": "books",
+    "description": "A brief history of humankind by Yuval Noah Harari.",
+    "price": 18.63,
+    "tags": [
+      "history",
+      "humanity",
+      "nonfiction"
+    ]
+  },
+  {
+    "product_id": "prod_0463",
+    "name": "All-Weather Floor Mats",
+    "category": "automotive_accessories",
+    "description": "Set of 4 custom-fit all-weather floor mats with raised edges for spills.",
+    "price": 69.43,
+    "tags": [
+      "mats",
+      "floor",
+      "weather"
+    ]
+  },
+  {
+    "product_id": "prod_0287",
+    "name": "Deluxe Mini Fridge",
+    "category": "home_appliances",
+    "description": "deluxe version of the popular mini fridge with enhanced features.",
+    "price": 221.62,
+    "tags": [
+      "cordless",
+      "stick",
+      "vacuum"
+    ]
+  }
+]
