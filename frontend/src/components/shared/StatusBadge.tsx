@@ -4,18 +4,27 @@ interface StatusBadgeProps {
 }
 
 const colors: Record<string, string> = {
-  healthy: 'bg-cdp-success/10 text-cdp-success border-cdp-success/20',
-  degraded: 'bg-cdp-warning/10 text-cdp-warning border-cdp-warning/20',
-  down: 'bg-cdp-danger/10 text-cdp-danger border-cdp-danger/20',
-  ok: 'bg-cdp-success/10 text-cdp-success border-cdp-success/20',
+  healthy: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  degraded: 'bg-amber-50 text-amber-700 border-amber-200',
+  down: 'bg-red-50 text-red-700 border-red-200',
+  ok: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  error: 'bg-red-50 text-red-700 border-red-200',
+}
+
+const dots: Record<string, string> = {
+  healthy: 'bg-emerald-500',
+  degraded: 'bg-amber-500',
+  down: 'bg-red-500',
+  ok: 'bg-emerald-500',
+  error: 'bg-red-500',
 }
 
 export default function StatusBadge({ status, size = 'sm' }: StatusBadgeProps) {
-  const s = size === 'sm' ? 'text-[10px] px-2 py-0.5' : 'text-xs px-2.5 py-1'
+  const s = size === 'sm' ? 'text-[11px] px-2.5 py-0.5' : 'text-xs px-3 py-1'
   return (
-    <span className={`inline-flex items-center gap-1 rounded-full border font-medium ${colors[status] || 'bg-white/5 text-cdp-text-muted border-white/10'} ${s}`}>
-      <span className={`w-1.5 h-1.5 rounded-full ${status === 'healthy' || status === 'ok' ? 'bg-cdp-success' : status === 'degraded' ? 'bg-cdp-warning' : 'bg-cdp-danger'}`} />
-      {status}
+    <span className={`inline-flex items-center gap-1.5 rounded-full border font-medium ${colors[status] || 'bg-slate-50 text-slate-600 border-slate-200'} ${s}`}>
+      <span className={`w-1.5 h-1.5 rounded-full ${dots[status] || 'bg-slate-400'}`} />
+      <span className="capitalize">{status === 'ok' ? 'healthy' : status}</span>
     </span>
   )
 }

@@ -14,36 +14,36 @@ export default function AdCreativeCard({ ad, onRegenerate, regenerating }: Props
   const stale = minutesAgo > 10
 
   return (
-    <div className="bg-cdp-card border border-white/5 rounded-xl overflow-hidden">
-      <div className="p-5">
-        <h3 className="text-lg font-bold text-cdp-text mb-1">{ad.headline}</h3>
-        <p className="text-sm text-cdp-text-muted mb-3">{ad.body}</p>
-        <div className="inline-block px-4 py-2 rounded-lg bg-cdp-accent/10 text-cdp-accent text-sm font-medium border border-cdp-accent/20">
+    <div className="bg-white border border-cdp-border rounded-xl shadow-card overflow-hidden hover:shadow-card-hover transition-shadow duration-200">
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-slate-900 mb-1.5 leading-tight">{ad.headline}</h3>
+        <p className="text-sm text-slate-600 mb-4 leading-relaxed">{ad.body}</p>
+        <div className="inline-flex items-center px-5 py-2 rounded-lg bg-blue-50 text-blue-700 text-sm font-medium border border-blue-200">
           {ad.cta}
         </div>
         {ad.product_links.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-3">
+          <div className="flex flex-wrap gap-1.5 mt-4">
             {ad.product_links.map((link, i) => (
-              <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-white/5 text-cdp-text-muted font-mono">
+              <span key={i} className="text-[11px] px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-500 font-mono border border-slate-200">
                 {link}
               </span>
             ))}
           </div>
         )}
       </div>
-      <div className="px-5 py-2.5 border-t border-white/5 flex items-center justify-between">
-        <div className="flex items-center gap-2 text-[10px] text-cdp-text-muted">
-          <Clock size={10} />
+      <div className="px-6 py-3 border-t border-cdp-border flex items-center justify-between bg-slate-50/50">
+        <div className="flex items-center gap-2 text-xs text-slate-400">
+          <Clock size={12} />
           <span>{minutesAgo}m ago</span>
-          {stale && <span className="text-cdp-warning font-medium">(stale)</span>}
+          {stale && <span className="text-amber-600 font-medium">(stale)</span>}
         </div>
         {onRegenerate && (
           <button
             onClick={onRegenerate}
             disabled={regenerating}
-            className="flex items-center gap-1 text-[10px] text-cdp-accent hover:text-cdp-accent/80 transition-colors disabled:opacity-50"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-150 disabled:opacity-50"
           >
-            <RefreshCw size={10} className={regenerating ? 'animate-spin' : ''} />
+            <RefreshCw size={12} className={regenerating ? 'animate-spin' : ''} />
             Regenerate
           </button>
         )}

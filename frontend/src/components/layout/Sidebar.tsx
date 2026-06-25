@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { getEvalMetrics } from '@/api/endpoints'
 import {
-  Activity, Fingerprint, Users, Megaphone, BarChart3,
+  Activity, Fingerprint, Users, Megaphone, BarChart3, ChevronDown,
 } from 'lucide-react'
 
 const links = [
@@ -22,37 +22,53 @@ export default function Sidebar() {
   const f1 = evalMetrics?.probabilistic?.f1
 
   return (
-    <aside className="w-60 shrink-0 h-screen bg-cdp-card border-r border-white/5 flex flex-col">
-      <div className="flex items-center gap-2.5 px-5 h-14 border-b border-white/5">
-        <div className="w-7 h-7 rounded-md bg-cdp-accent flex items-center justify-center text-xs font-bold">
+    <aside className="w-64 shrink-0 h-screen bg-white border-r border-cdp-border flex flex-col">
+      <div className="flex items-center gap-3 px-6 h-16 border-b border-cdp-border">
+        <div className="w-8 h-8 rounded-lg bg-cdp-accent flex items-center justify-center text-sm font-bold text-white shadow-sm">
           C
         </div>
-        <span className="font-semibold text-sm text-cdp-text">CDP Dashboard</span>
+        <div className="flex flex-col">
+          <span className="font-semibold text-sm text-cdp-text">CDP</span>
+          <span className="text-[10px] text-cdp-text-muted -mt-0.5">Customer Data Platform</span>
+        </div>
       </div>
 
-      <nav className="flex-1 py-4 px-3 space-y-1">
+      <nav className="flex-1 py-4 px-3 space-y-0.5">
         {links.map(({ to, label, icon: Icon }) => (
           <NavLink
             key={to}
             to={to}
             end={to === '/'}
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-colors ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all duration-150 ${
                 isActive
-                  ? 'bg-cdp-accent/15 text-cdp-accent font-medium'
-                  : 'text-cdp-text-muted hover:text-cdp-text hover:bg-white/5'
+                  ? 'bg-blue-50 text-blue-700 font-medium border-l-2 border-blue-600 ml-0 pl-[10px]'
+                  : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50 border-l-2 border-transparent ml-0 pl-[10px]'
               }`
             }
           >
-            <Icon size={16} />
-            {label}
+            {({ isActive }) => (
+              <>
+                <Icon size={18} className={isActive ? 'text-blue-600' : 'text-slate-400'} />
+                {label}
+              </>
+            )}
           </NavLink>
         ))}
       </nav>
 
-      <div className="px-5 py-3 border-t border-white/5">
-        <div className="text-[10px] text-cdp-muted font-mono">
-          CDP v1.0 &middot; F1={f1 ? f1.toFixed(4) : '...'}
+      <div className="px-6 py-4 border-t border-cdp-border">
+        <div className="flex items-center justify-between">
+          <span className="text-[11px] text-slate-400 font-medium">Identity Resolution</span>
+          <span className="text-[11px] font-mono font-medium text-slate-600">
+            F1 <span className="text-slate-900">{f1 ? f1.toFixed(4) : '...'}</span>
+          </span>
+        </div>
+        <div className="mt-1.5 h-1.5 rounded-full bg-slate-100 overflow-hidden">
+          <div
+            className="h-full rounded-full bg-blue-500 transition-all duration-500"
+            style={{ width: `${f1 ? Math.min(f1 * 100, 100) : 0}%` }}
+          />
         </div>
       </div>
     </aside>

@@ -3,7 +3,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { motion } from 'framer-motion'
 import { getAdCreative, regenerateAd } from '@/api/endpoints'
 import AdCreativeCard from '@/components/shared/AdCreativeCard'
-import { Search, Smartphone, Monitor, Loader2 } from 'lucide-react'
+import { Search, Smartphone, Monitor, Loader2, Zap, RefreshCw } from 'lucide-react'
 
 export default function AdStudio() {
   const [uid, setUid] = useState('')
@@ -43,22 +43,22 @@ export default function AdStudio() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {/* Search */}
-      <form onSubmit={handleSearch} className="flex gap-2">
+      <form onSubmit={handleSearch} className="flex gap-3">
         <div className="relative flex-1">
-          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-cdp-text-muted" />
+          <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
             value={uid}
             onChange={e => setUid(e.target.value)}
             placeholder="Enter Global UID to generate ad..."
-            className="w-full pl-9 pr-4 py-2.5 bg-cdp-card border border-white/10 rounded-xl text-sm text-cdp-text placeholder:text-cdp-text-muted/50 outline-none focus:border-cdp-accent/50 transition-colors font-mono"
+            className="w-full pl-10 pr-4 py-2.5 bg-white border border-cdp-border rounded-xl text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all duration-150 font-mono shadow-sm"
           />
         </div>
         <button
           type="submit"
-          className="px-5 py-2.5 rounded-xl bg-cdp-accent text-white text-sm font-medium hover:bg-cdp-accent/90 transition-colors"
+          className="px-5 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-all duration-150 shadow-sm"
         >
           Fetch Ad
         </button>
@@ -66,40 +66,47 @@ export default function AdStudio() {
 
       {/* Loading State */}
       {isLoading && (
-        <div className="flex flex-col items-center justify-center py-16">
-          <Loader2 size={24} className="text-cdp-accent animate-spin mb-3" />
-          <p className="text-xs text-cdp-text-muted animate-pulse">
-            Generating ad creative... (Ollama may take 5-15s)
-          </p>
+        <div className="bg-white border border-cdp-border rounded-xl shadow-card p-6 animate-pulse">
+          <div className="flex flex-col items-center justify-center py-8">
+            <Loader2 size={20} className="text-blue-500 animate-spin mb-3" />
+            <p className="text-sm text-slate-500 font-medium">Generating ad creative...</p>
+            <p className="text-xs text-slate-400 mt-1">Ollama may take 5–15 seconds</p>
+          </div>
         </div>
       )}
 
       {isError && !isLoading && (
-        <div className="text-center py-8 text-cdp-text-muted text-sm">
-          No ad found for this UID. Try a different one.
+        <div className="flex flex-col items-center justify-center py-12">
+          <Search size={24} className="text-slate-300 mb-3" />
+          <p className="text-sm text-slate-500 font-medium">No ad found for this UID</p>
+          <p className="text-xs text-slate-400 mt-1">Try a different one.</p>
         </div>
       )}
 
       {/* Ad Preview */}
       {adResponse && !isLoading && (
-        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-6">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-4">
               <button
                 onClick={() => setMobileView(false)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-colors ${
-                  !mobileView ? 'bg-cdp-accent/10 text-cdp-accent border border-cdp-accent/20' : 'bg-cdp-card text-cdp-text-muted border border-white/5'
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 ${
+                  !mobileView
+                    ? 'bg-blue-50 text-blue-700 border border-blue-200 shadow-sm'
+                    : 'bg-white text-slate-500 border border-cdp-border hover:bg-slate-50'
                 }`}
               >
                 <Monitor size={12} /> Desktop
               </button>
               <button
                 onClick={() => setMobileView(true)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-colors ${
-                  mobileView ? 'bg-cdp-accent/10 text-cdp-accent border border-cdp-accent/20' : 'bg-cdp-card text-cdp-text-muted border border-white/5'
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 ${
+                  mobileView
+                    ? 'bg-blue-50 text-blue-700 border border-blue-200 shadow-sm'
+                    : 'bg-white text-slate-500 border border-cdp-border hover:bg-slate-50'
                 }`}
               >
                 <Smartphone size={12} /> Mobile
@@ -114,28 +121,27 @@ export default function AdStudio() {
               />
             </div>
 
-            <div className="mt-2 text-[10px] text-cdp-text-muted font-mono">
-              {adResponse.cached ? 'From cache' : 'Freshly generated'} &middot; {new Date(adResponse.generated_at).toLocaleString()}
+            <div className="mt-3 flex items-center gap-2 text-xs text-slate-400 font-mono">
+              <Zap size={12} />
+              <span>{adResponse.cached ? 'From cache' : 'Freshly generated'} &middot; {new Date(adResponse.generated_at).toLocaleString()}</span>
             </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="bg-cdp-card border border-white/5 rounded-xl p-4"
+            className="bg-white border border-cdp-border rounded-xl p-5 shadow-card"
           >
-            <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-              Profile Context
-            </div>
-            <div className="text-[10px] font-mono text-cdp-text-muted break-all mb-3">
+            <div className="text-xs font-semibold text-slate-600 mb-3">Profile Context</div>
+            <div className="text-xs font-mono text-slate-500 break-all mb-4 bg-slate-50 px-2 py-1.5 rounded border border-slate-200">
               UID: {adResponse.global_uid}
             </div>
             {adResponse.creative.product_links.length > 0 && (
               <div>
-                <div className="text-[10px] text-cdp-text-muted mb-1">Product Links</div>
-                <div className="space-y-1">
+                <div className="text-[11px] font-medium text-slate-500 mb-2">Product Links</div>
+                <div className="space-y-1.5">
                   {adResponse.creative.product_links.map((link, i) => (
-                    <div key={i} className="text-[10px] font-mono text-cdp-accent bg-cdp-accent/5 rounded px-2 py-1">
+                    <div key={i} className="text-[11px] font-mono text-blue-600 bg-blue-50 border border-blue-200 rounded-lg px-3 py-1.5">
                       {link}
                     </div>
                   ))}
@@ -147,34 +153,36 @@ export default function AdStudio() {
       )}
 
       {/* Batch Preview */}
-      <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-        <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-          Batch Preview
+      <div className="bg-white border border-cdp-border rounded-xl p-5 shadow-card">
+        <div className="flex items-center gap-2 mb-4">
+          <Zap size={14} className="text-slate-500" />
+          <span className="text-xs font-semibold text-slate-600">Batch Preview</span>
         </div>
-        <div className="flex gap-2 mb-3">
+        <div className="flex gap-3 mb-4">
           <input
             type="text"
             value={batchUids}
             onChange={e => setBatchUids(e.target.value)}
             placeholder="Comma-separated UIDs..."
-            className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-xs text-cdp-text placeholder:text-cdp-text-muted/50 outline-none font-mono"
+            className="flex-1 px-3 py-2 bg-white border border-cdp-border rounded-lg text-xs text-slate-900 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all duration-150 font-mono"
           />
           <button
             onClick={handleBatchFetch}
-            className="px-4 py-2 rounded-lg bg-cdp-accent text-white text-xs font-medium hover:bg-cdp-accent/90"
+            className="px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-medium hover:bg-blue-700 transition-all duration-150 shadow-sm"
           >
             Fetch All
           </button>
         </div>
         {batchResults.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {batchResults.map((r, i) => (
               <div key={i}>
                 {r.data ? (
                   <AdCreativeCard ad={r.data.creative} />
                 ) : (
-                  <div className="bg-cdp-card border border-white/5 rounded-xl p-4 text-[10px] text-cdp-danger">
-                    {r.uid}: {r.error}
+                  <div className="bg-white border border-red-200 rounded-xl p-4 shadow-card">
+                    <div className="text-xs font-mono text-slate-500 mb-1">{r.uid}</div>
+                    <div className="text-xs text-red-600">{r.error}</div>
                   </div>
                 )}
               </div>

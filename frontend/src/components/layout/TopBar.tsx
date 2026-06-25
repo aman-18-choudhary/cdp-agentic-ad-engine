@@ -1,19 +1,17 @@
 import { useQuery } from '@tanstack/react-query'
 import { getHealth } from '@/api/endpoints'
-import { Server, Wifi } from 'lucide-react'
+import { Shield, ShieldCheck, Server } from 'lucide-react'
 
-const serviceColors: Record<string, string> = {
-  ok: 'bg-cdp-success',
-  degraded: 'bg-cdp-warning',
-  error: 'bg-cdp-danger',
+const serviceDot: Record<string, string> = {
+  ok: 'bg-emerald-500',
+  degraded: 'bg-amber-500',
+  error: 'bg-red-500',
 }
 
-const servicePorts: Record<string, string> = {
-  mongodb: '27017',
-  redis: '6379',
-  qdrant: '6333',
-  ollama: '11434',
-  redpanda: '19093',
+const serviceColors: Record<string, string> = {
+  ok: 'text-emerald-700 bg-emerald-50 border-emerald-200',
+  degraded: 'text-amber-700 bg-amber-50 border-amber-200',
+  error: 'text-red-700 bg-red-50 border-red-200',
 }
 
 export default function TopBar({ title }: { title: string }) {
@@ -26,36 +24,33 @@ export default function TopBar({ title }: { title: string }) {
   const allOk = health?.status === 'ok'
 
   return (
-    <header className="h-14 border-b border-white/5 flex items-center justify-between px-6 bg-cdp-card/50">
-      <h1 className="text-base font-semibold text-cdp-text">{title}</h1>
+    <header className="h-16 border-b border-cdp-border bg-white sticky top-0 z-30 flex items-center justify-between px-8">
+      <h1 className="text-lg font-semibold text-slate-900 tracking-tight">{title}</h1>
 
       <div className="flex items-center gap-4">
         {health?.services && (
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2">
             {Object.entries(health.services).map(([name, status]) => (
               <div
                 key={name}
-                className="flex items-center gap-1.5 text-[10px] font-mono text-cdp-text-muted group relative"
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-[11px] font-medium transition-colors ${
+                  serviceColors[status] || 'text-slate-500 bg-slate-50 border-slate-200'
+                }`}
               >
-                <span
-                  className={`w-1.5 h-1.5 rounded-full ${
-                    serviceColors[status] || 'bg-cdp-muted'
-                  }`}
-                />
+                <span className={`w-1.5 h-1.5 rounded-full ${serviceDot[status] || 'bg-slate-400'}`} />
                 <span className="capitalize">{name}</span>
-                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 hidden group-hover:block bg-cdp-card border border-white/10 rounded px-2 py-1 text-[9px] whitespace-nowrap z-10">
-                  {name}:{servicePorts[name] || '?'} &middot; {status}
-                </div>
               </div>
             ))}
           </div>
         )}
 
-        <div className="flex items-center gap-1.5 text-[10px] font-mono">
-          <Wifi size={12} className={allOk ? 'text-cdp-success' : 'text-cdp-warning'} />
-          <span className={allOk ? 'text-cdp-success' : 'text-cdp-warning'}>
-            {allOk ? 'All Healthy' : 'Degraded'}
-          </span>
+        <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium border transition-colors ${
+          allOk
+            ? 'text-emerald-700 bg-emerald-50 border-emerald-200'
+            : 'text-amber-700 bg-amber-50 border-amber-200'
+        }`}>
+          {allOk ? <ShieldCheck size={14} /> : <Shield size={14} />}
+          <span>{allOk ? 'All Healthy' : 'Degraded'}</span>
         </div>
       </div>
     </header>

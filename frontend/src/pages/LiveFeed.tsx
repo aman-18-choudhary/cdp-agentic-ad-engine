@@ -5,16 +5,20 @@ import { getTrafficMetrics, getRecentEvents, postEvent } from '@/api/endpoints'
 import { useEventPolling } from '@/hooks/useEventPolling'
 import MetricCard from '@/components/shared/MetricCard'
 import {
-  Activity, Send, Filter, ChevronDown, RefreshCw,
+  Activity, Send, ChevronDown, RefreshCw, Radio, ShoppingCart, CreditCard, Eye,
 } from 'lucide-react'
 import type { ClickstreamEvent } from '@/api/types'
 
-const eventRowColor = (type: string) => {
-  switch (type) {
-    case 'purchase': return 'bg-cdp-success/5 border-l-cdp-success'
-    case 'cart': return 'bg-cdp-warning/5 border-l-cdp-warning'
-    default: return 'bg-transparent border-l-transparent'
-  }
+const typeColors: Record<string, string> = {
+  purchase: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  cart: 'bg-amber-50 text-amber-700 border-amber-200',
+  view: 'bg-slate-100 text-slate-600 border-slate-200',
+}
+
+const typeIcons: Record<string, React.ReactNode> = {
+  purchase: <CreditCard size={12} />,
+  cart: <ShoppingCart size={12} />,
+  view: <Eye size={12} />,
 }
 
 function generateMockEvent(): Partial<ClickstreamEvent> {
@@ -64,8 +68,8 @@ export default function LiveFeed() {
   })
 
   return (
-    <div className="space-y-5">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+    <div className="space-y-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <MetricCard
           title="Total Events"
           value={traffic?.total_events.toLocaleString() ?? '...'}
@@ -97,7 +101,7 @@ export default function LiveFeed() {
           <select
             value={filterPlatform}
             onChange={e => setFilterPlatform(e.target.value)}
-            className="bg-cdp-card border border-white/10 rounded-lg px-3 py-1.5 text-xs text-cdp-text-muted font-mono outline-none"
+            className="bg-white border border-cdp-border rounded-lg px-3 py-2 text-xs text-slate-600 font-medium outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all duration-150"
           >
             <option value="all">All Platforms</option>
             <option value="A">Platform A</option>
@@ -106,7 +110,7 @@ export default function LiveFeed() {
           <select
             value={filterType}
             onChange={e => setFilterType(e.target.value)}
-            className="bg-cdp-card border border-white/10 rounded-lg px-3 py-1.5 text-xs text-cdp-text-muted font-mono outline-none"
+            className="bg-white border border-cdp-border rounded-lg px-3 py-2 text-xs text-slate-600 font-medium outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all duration-150"
           >
             <option value="all">All Types</option>
             <option value="view">View</option>
@@ -117,11 +121,11 @@ export default function LiveFeed() {
 
         <button
           onClick={() => setShowSimulator(!showSimulator)}
-          className="flex items-center gap-1.5 text-xs text-cdp-accent hover:text-cdp-accent/80 transition-colors"
+          className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-150"
         >
           <Send size={12} />
           Event Simulator
-          <ChevronDown size={10} className={showSimulator ? 'rotate-180' : ''} />
+          <ChevronDown size={12} className={`transition-transform duration-150 ${showSimulator ? 'rotate-180' : ''}`} />
         </button>
       </div>
 
@@ -129,16 +133,19 @@ export default function LiveFeed() {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
-          className="bg-cdp-card border border-white/5 rounded-xl p-4 overflow-hidden"
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.2 }}
+          className="bg-white border border-cdp-border rounded-xl shadow-card p-5 overflow-hidden"
         >
           <div className="flex items-center justify-between">
-            <div className="text-xs text-cdp-text-muted">
+            <div className="flex items-center gap-2 text-sm text-slate-500">
+              <Radio size={14} className="text-slate-400" />
               Click to emit a simulated clickstream event
             </div>
             <button
               onClick={emitEvent}
               disabled={mutation.isPending}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-cdp-accent text-white text-xs font-medium hover:bg-cdp-accent/90 transition-colors disabled:opacity-50"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-medium hover:bg-blue-700 transition-all duration-150 disabled:opacity-50 shadow-sm"
             >
               {mutation.isPending ? (
                 <RefreshCw size={12} className="animate-spin" />
@@ -149,30 +156,30 @@ export default function LiveFeed() {
             </button>
           </div>
           {mutation.isSuccess && (
-            <div className="mt-2 text-[10px] text-cdp-success">
-              Event accepted &mdash; ID: {mutation.data.event_id}
+            <div className="mt-3 text-xs text-emerald-600 font-mono">
+              Event accepted — ID: {mutation.data.event_id}
             </div>
           )}
           {mutation.isError && (
-            <div className="mt-2 text-[10px] text-cdp-danger">
+            <div className="mt-3 text-xs text-red-600">
               Failed: {(mutation.error as Error).message}
             </div>
           )}
         </motion.div>
       )}
 
-      <div className="bg-cdp-card border border-white/5 rounded-xl overflow-hidden">
+      <div className="bg-white border border-cdp-border rounded-xl shadow-card overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-xs">
             <thead>
-              <tr className="border-b border-white/5 text-cdp-text-muted">
-                <th className="text-left px-4 py-3 font-medium">Time</th>
-                <th className="text-left px-4 py-3 font-medium">Platform</th>
-                <th className="text-left px-4 py-3 font-medium">Type</th>
-                <th className="text-left px-4 py-3 font-medium">Product ID</th>
-                <th className="text-left px-4 py-3 font-medium">Device</th>
-                <th className="text-left px-4 py-3 font-medium">City</th>
-                <th className="text-left px-4 py-3 font-medium">Session</th>
+              <tr className="border-b border-cdp-border bg-slate-50/80">
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Time</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Platform</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Type</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Product ID</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Device</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">City</th>
+                <th className="text-left px-4 py-3.5 font-semibold text-slate-500 text-[11px] tracking-wide">Session</th>
               </tr>
             </thead>
             <tbody>
@@ -182,36 +189,44 @@ export default function LiveFeed() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: Math.min(i * 0.002, 0.2) }}
-                  className={`border-b border-white/5 border-l-2 ${eventRowColor(event.event_type)} hover:bg-white/[0.02] transition-colors`}
+                  className={`border-b border-cdp-border/60 hover:bg-slate-50 transition-colors duration-100 ${
+                    event.event_type === 'purchase' ? 'border-l-2 border-l-emerald-500' :
+                    event.event_type === 'cart' ? 'border-l-2 border-l-amber-500' :
+                    'border-l-2 border-l-transparent'
+                  }`}
                 >
-                  <td className="px-4 py-2.5 font-mono text-cdp-text-muted">
+                  <td className="px-4 py-3 font-mono text-slate-500 text-[11px]">
                     {new Date(event.event_time).toLocaleTimeString('en-US', { hour12: false })}
                   </td>
-                  <td className="px-4 py-2.5">
-                    <span className={`font-medium ${event.platform === 'A' ? 'text-cdp-accent' : 'text-cdp-warning'}`}>
+                  <td className="px-4 py-3">
+                    <span className={`inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold ${
+                      event.platform === 'A' ? 'text-blue-600 bg-blue-50' : 'text-amber-600 bg-amber-50'
+                    }`}>
                       {event.platform}
                     </span>
                   </td>
-                  <td className="px-4 py-2.5">
-                    <span className={`capitalize ${
-                      event.event_type === 'purchase' ? 'text-cdp-success' :
-                      event.event_type === 'cart' ? 'text-cdp-warning' : 'text-cdp-text-muted'
-                    }`}>
-                      {event.event_type}
+                  <td className="px-4 py-3">
+                    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium border ${typeColors[event.event_type] || 'text-slate-500 bg-slate-50 border-slate-200'}`}>
+                      {typeIcons[event.event_type]}
+                      <span className="capitalize">{event.event_type}</span>
                     </span>
                   </td>
-                  <td className="px-4 py-2.5 font-mono text-cdp-text-muted">{event.product_id}</td>
-                  <td className="px-4 py-2.5 text-cdp-text-muted">{event.device_type}</td>
-                  <td className="px-4 py-2.5 text-cdp-text-muted">{event.location?.city ?? '—'}</td>
-                  <td className="px-4 py-2.5 font-mono text-cdp-text-muted">
+                  <td className="px-4 py-3 font-mono text-slate-500 text-[11px]">{event.product_id}</td>
+                  <td className="px-4 py-3 text-slate-500">{event.device_type}</td>
+                  <td className="px-4 py-3 text-slate-500">{event.location?.city ?? '—'}</td>
+                  <td className="px-4 py-3 font-mono text-slate-400 text-[11px]">
                     {event.session_id.substring(0, 8)}...
                   </td>
                 </motion.tr>
               ))}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="px-4 py-8 text-center text-cdp-text-muted text-xs">
-                    No events yet. Use the simulator to emit events.
+                  <td colSpan={7} className="px-4 py-12 text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <Radio size={20} className="text-slate-300" />
+                      <span className="text-sm text-slate-400 font-medium">No events yet</span>
+                      <span className="text-xs text-slate-400">Use the simulator to emit events.</span>
+                    </div>
                   </td>
                 </tr>
               )}

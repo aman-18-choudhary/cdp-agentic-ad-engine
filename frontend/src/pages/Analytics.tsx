@@ -2,34 +2,51 @@ import { useQuery } from '@tanstack/react-query'
 import { motion } from 'framer-motion'
 import {
   PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, AreaChart, Area,
+  Tooltip, ResponsiveContainer,
 } from 'recharts'
 import { getEvalMetrics, getTrafficMetrics, getHealth } from '@/api/endpoints'
 import MetricCard from '@/components/shared/MetricCard'
 import StatusBadge from '@/components/shared/StatusBadge'
 import {
-  BarChart3, Target, Activity, Server, AlertTriangle, CheckCircle,
+  BarChart3, Target, Activity, Server, AlertTriangle, CheckCircle, PieChartIcon,
 } from 'lucide-react'
 
-const PIE_COLORS = ['#3B82F6', '#14B8A6', '#F59E0B', '#8B5CF6', '#F43F5E']
-const BAR_COLORS = ['#3B82F6', '#F59E0B', '#8B5CF6']
+const PIE_COLORS = ['#2563EB', '#14B8A6']
+const BAR_COLORS = ['#2563EB', '#D97706', '#059669']
+
+function CustomTooltip({ active, payload, label }: any) {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-white border border-cdp-border rounded-lg shadow-elevated px-3 py-2 text-xs">
+        <p className="text-slate-900 font-medium mb-1">{label}</p>
+        {payload.map((p: any, i: number) => (
+          <p key={i} className="text-slate-500" style={{ color: p.color }}>
+            {p.name}: {typeof p.value === 'number' ? p.value.toFixed(4) : p.value}
+          </p>
+        ))}
+      </div>
+    )
+  }
+  return null
+}
 
 function F1Gauge({ value, label, target = 0.85 }: { value: number; label: string; target?: number }) {
   const pct = Math.min(value / target, 1) * 100
-  const color = value >= target ? '#10B981' : value >= target * 0.8 ? '#F59E0B' : '#EF4444'
+  const color = value >= target ? '#059669' : value >= target * 0.8 ? '#D97706' : '#DC2626'
 
   return (
-    <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-      <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">{label}</div>
-      <div className="flex items-center gap-4">
-        <div className="relative w-20 h-20">
-          <svg viewBox="0 0 80 80" className="w-20 h-20 -rotate-90">
-            <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="6" />
+    <div className="bg-white border border-cdp-border rounded-xl p-5 shadow-card">
+      <div className="text-xs font-semibold text-slate-600 mb-4">{label}</div>
+      <div className="flex items-center gap-5">
+        <div className="relative w-24 h-24 shrink-0">
+          <svg viewBox="0 0 80 80" className="w-24 h-24 -rotate-90">
+            <circle cx="40" cy="40" r="34" fill="none" stroke="#F1F5F9" strokeWidth="6" />
             <circle
               cx="40" cy="40" r="34"
               fill="none" stroke={color} strokeWidth="6"
               strokeDasharray={`${(value / 1.2) * 213.6} 213.6`}
               strokeLinecap="round"
+              className="transition-all duration-500"
             />
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
@@ -38,12 +55,16 @@ function F1Gauge({ value, label, target = 0.85 }: { value: number; label: string
             </span>
           </div>
         </div>
-        <div>
-          <div className="text-xs text-cdp-text-muted">
-            Target: {target.toFixed(2)} {value >= target && <CheckCircle size={12} className="inline text-cdp-success" />}
+        <div className="space-y-1.5">
+          <div className="flex items-center gap-1.5 text-sm text-slate-500">
+            Target: <span className="font-mono font-medium text-slate-700">{target.toFixed(2)}</span>
+            {value >= target && <CheckCircle size={14} className="text-emerald-500" />}
           </div>
-          <div className="text-xs font-mono text-cdp-text-muted mt-1">
-            {pct.toFixed(0)}% of target
+          <div className="flex items-center gap-2">
+            <div className="h-1.5 w-24 rounded-full bg-slate-100 overflow-hidden">
+              <div className="h-full rounded-full transition-all duration-500" style={{ width: `${pct}%`, backgroundColor: color }} />
+            </div>
+            <span className="text-xs font-mono text-slate-400">{pct.toFixed(0)}%</span>
           </div>
         </div>
       </div>
@@ -91,7 +112,7 @@ export default function Analytics() {
     : []
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {/* F1 Gauges */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {evalMetrics && (
@@ -103,29 +124,27 @@ export default function Analytics() {
       </div>
 
       {evalMetrics && (
-        <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-          <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-            Precision / Recall / F1 Comparison
+        <div className="bg-white border border-cdp-border rounded-xl p-6 shadow-card">
+          <div className="flex items-center gap-2 mb-1">
+            <BarChart3 size={14} className="text-slate-500" />
+            <span className="text-xs font-semibold text-slate-600">Precision / Recall / F1</span>
           </div>
-          <div className="text-[10px] text-cdp-text-muted mb-4">
-            {evalMetrics.total_pairs_tested} session pairs tested
-            <span className="ml-3 text-cdp-warning">
+          <p className="text-xs text-slate-400 mb-4">
+            {evalMetrics.total_pairs_tested.toLocaleString()} session pairs tested
+            <span className="ml-3 text-amber-600">
               <AlertTriangle size={10} className="inline mr-1" />
-              Deterministic precision is low due to fingerprint collision in synthetic data
+              Deterministic precision is low due to fingerprint collision
             </span>
-          </div>
-          <ResponsiveContainer width="100%" height={200}>
+          </p>
+          <ResponsiveContainer width="100%" height={220}>
             <BarChart data={evalBarData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-              <XAxis dataKey="name" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 11 }} />
-              <YAxis domain={[0, 1]} tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 10 }} />
-              <Tooltip
-                contentStyle={{ background: '#111827', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '11px' }}
-                labelStyle={{ color: '#F1F5F9' }}
-              />
-              <Bar dataKey="precision" fill="#3B82F6" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="recall" fill="#F59E0B" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="f1" fill="#10B981" radius={[4, 4, 0, 0]} />
+              <CartesianGrid strokeDasharray="3 3" stroke="#F1F5F9" vertical={false} />
+              <XAxis dataKey="name" tick={{ fill: '#64748B', fontSize: 11 }} axisLine={{ stroke: '#E2E8F0' }} tickLine={false} />
+              <YAxis domain={[0, 1]} tick={{ fill: '#94A3B8', fontSize: 10 }} axisLine={false} tickLine={false} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="precision" fill="#2563EB" radius={[4, 4, 0, 0]} maxBarSize={32} />
+              <Bar dataKey="recall" fill="#D97706" radius={[4, 4, 0, 0]} maxBarSize={32} />
+              <Bar dataKey="f1" fill="#059669" radius={[4, 4, 0, 0]} maxBarSize={32} />
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -134,15 +153,16 @@ export default function Analytics() {
       {/* Traffic + Event Type */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {traffic && (
-          <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-            <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-              Platform Split
+          <div className="bg-white border border-cdp-border rounded-xl p-6 shadow-card">
+            <div className="flex items-center gap-2 mb-4">
+              <PieChartIcon size={14} className="text-slate-500" />
+              <span className="text-xs font-semibold text-slate-600">Platform Split</span>
             </div>
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={220}>
               <PieChart>
                 <Pie
                   data={pieData} dataKey="value" nameKey="name"
-                  cx="50%" cy="50%" innerRadius={60} outerRadius={85}
+                  cx="50%" cy="50%" innerRadius={65} outerRadius={90}
                   paddingAngle={3} cornerRadius={4}
                   stroke="transparent"
                 >
@@ -150,16 +170,15 @@ export default function Analytics() {
                     <Cell key={i} fill={PIE_COLORS[i]} />
                   ))}
                 </Pie>
-                <Tooltip
-                  contentStyle={{ background: '#111827', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '11px' }}
-                />
+                <Tooltip content={<CustomTooltip />} />
               </PieChart>
             </ResponsiveContainer>
-            <div className="flex justify-center gap-4 mt-2">
+            <div className="flex justify-center gap-6 mt-2">
               {pieData.map((d, i) => (
-                <div key={d.name} className="flex items-center gap-1.5 text-[10px] text-cdp-text-muted">
-                  <span className="w-2 h-2 rounded-sm" style={{ backgroundColor: PIE_COLORS[i] }} />
-                  {d.name}: {d.value.toLocaleString()}
+                <div key={d.name} className="flex items-center gap-2 text-xs text-slate-500">
+                  <span className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: PIE_COLORS[i] }} />
+                  <span className="font-medium">{d.name}:</span>
+                  <span className="font-mono">{d.value.toLocaleString()}</span>
                 </div>
               ))}
             </div>
@@ -167,19 +186,18 @@ export default function Analytics() {
         )}
 
         {traffic && (
-          <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-            <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-              Event Type Distribution
+          <div className="bg-white border border-cdp-border rounded-xl p-6 shadow-card">
+            <div className="flex items-center gap-2 mb-4">
+              <BarChart3 size={14} className="text-slate-500" />
+              <span className="text-xs font-semibold text-slate-600">Event Type Distribution</span>
             </div>
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={220}>
               <BarChart data={typeData} layout="vertical">
-                <CartesianGrid horizontal={false} stroke="rgba(255,255,255,0.04)" />
-                <XAxis type="number" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 10 }} />
-                <YAxis type="category" dataKey="name" tick={{ fill: 'rgba(255,255,255,0.6)', fontSize: 11 }} width={70} />
-                <Tooltip
-                  contentStyle={{ background: '#111827', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '11px' }}
-                />
-                <Bar dataKey="value" radius={[0, 6, 6, 0]}>
+                <CartesianGrid horizontal={false} stroke="#F1F5F9" />
+                <XAxis type="number" tick={{ fill: '#94A3B8', fontSize: 10 }} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={{ fill: '#64748B', fontSize: 11 }} width={70} axisLine={false} tickLine={false} />
+                <Tooltip content={<CustomTooltip />} />
+                <Bar dataKey="value" radius={[0, 6, 6, 0]} maxBarSize={24}>
                   {typeData.map((_, i) => (
                     <Cell key={i} fill={BAR_COLORS[i]} />
                   ))}
@@ -191,7 +209,7 @@ export default function Analytics() {
       </div>
 
       {/* Pipeline Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <MetricCard
           title="Intent Profiles"
           value={traffic ? `${Math.round(traffic.total_events * 0.0126)}/${Math.round(traffic.total_events * 0.0127)}` : '...'}
@@ -217,21 +235,19 @@ export default function Analytics() {
       </div>
 
       {/* Infrastructure Health */}
-      <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-        <div className="flex items-center gap-2 mb-4">
-          <Server size={14} className="text-cdp-accent" />
-          <span className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider">
-            Infrastructure Health
-          </span>
+      <div className="bg-white border border-cdp-border rounded-xl p-6 shadow-card">
+        <div className="flex items-center gap-2 mb-5">
+          <Server size={14} className="text-slate-500" />
+          <span className="text-xs font-semibold text-slate-600">Infrastructure Health</span>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {healthServices.map((svc) => (
             <div
               key={svc.name}
-              className="flex flex-col items-center gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5"
+              className="flex flex-col items-center gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-colors duration-150"
             >
               <StatusBadge status={svc.status === 'ok' ? 'healthy' : svc.status} />
-              <span className="text-[10px] font-mono text-cdp-text-muted capitalize">{svc.name}</span>
+              <span className="text-[11px] font-mono text-slate-500 capitalize font-medium">{svc.name}</span>
             </div>
           ))}
         </div>

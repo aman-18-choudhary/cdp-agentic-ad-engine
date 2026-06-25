@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { getProfile, getEvalMetrics } from '@/api/endpoints'
 import StatusBadge from '@/components/shared/StatusBadge'
 import MetricCard from '@/components/shared/MetricCard'
-import { Search, Copy, Fingerprint, BarChart3, Activity, Globe } from 'lucide-react'
+import { Search, Copy, Fingerprint, BarChart3, Activity, Globe, User, MapPin, Smartphone, Clock, Network } from 'lucide-react'
 import type { UnifiedProfile, SessionLink } from '@/api/types'
 
 function SessionGraph({ sessions }: { sessions: SessionLink[] }) {
@@ -17,22 +17,19 @@ function SessionGraph({ sessions }: { sessions: SessionLink[] }) {
 
   return (
     <svg viewBox="0 0 240 90" className="w-full max-w-[240px] h-auto">
-      {/* Center node */}
-      <circle cx={cx} cy={cy} r={radius} fill="#3B82F6" opacity={0.2} stroke="#3B82F6" strokeWidth={2} />
-      <text x={cx} y={cy + 1} textAnchor="middle" fill="#3B82F6" fontSize="6" fontWeight="bold">UID</text>
-
-      {/* Edges + child nodes */}
+      <circle cx={cx} cy={cy} r={radius} fill="#2563EB" opacity={0.15} stroke="#2563EB" strokeWidth={2} />
+      <text x={cx} y={cy + 1} textAnchor="middle" fill="#2563EB" fontSize="6" fontWeight="bold">UID</text>
       {sessions.slice(0, 3).map((s, i) => {
         const x = cx + (i - (Math.min(sessions.length, 3) - 1) / 2) * spacing
-        const color = s.method === 'deterministic' ? '#3B82F6' : s.confidence >= 0.85 ? '#10B981' : '#F59E0B'
+        const color = s.method === 'deterministic' ? '#2563EB' : s.confidence >= 0.85 ? '#059669' : '#D97706'
         return (
           <g key={i}>
-            <line x1={cx} y1={cy + radius} x2={x} y2={childY - radius} stroke={color} strokeWidth={1.5} opacity={0.5} />
+            <line x1={cx} y1={cy + radius} x2={x} y2={childY - radius} stroke={color} strokeWidth={1.5} opacity={0.4} />
             <circle cx={x} cy={childY} r={radius} fill="none" stroke={color} strokeWidth={1.5} />
             <text x={x} y={childY + 1} textAnchor="middle" fill={color} fontSize="5" fontWeight="medium">
               {s.session_id.substring(0, 5)}
             </text>
-            <text x={x} y={childY + radius + 8} textAnchor="middle" fill="rgba(255,255,255,0.4)" fontSize="4">
+            <text x={x} y={childY + radius + 8} textAnchor="middle" fill="rgba(100,116,139,0.6)" fontSize="4">
               {s.confidence.toFixed(2)}
             </text>
           </g>
@@ -68,50 +65,68 @@ export default function IdentityExplorer() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {/* Search */}
-      <form onSubmit={handleSearch} className="flex gap-2">
+      <form onSubmit={handleSearch} className="flex gap-3">
         <div className="relative flex-1">
-          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-cdp-text-muted" />
+          <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
             value={searchUid}
             onChange={e => setSearchUid(e.target.value)}
             placeholder="Enter Global UID to explore..."
-            className="w-full pl-9 pr-4 py-2.5 bg-cdp-card border border-white/10 rounded-xl text-sm text-cdp-text placeholder:text-cdp-text-muted/50 outline-none focus:border-cdp-accent/50 transition-colors font-mono"
+            className="w-full pl-10 pr-4 py-2.5 bg-white border border-cdp-border rounded-xl text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-400 transition-all duration-150 font-mono shadow-sm"
           />
         </div>
         <button
           type="submit"
-          className="px-5 py-2.5 rounded-xl bg-cdp-accent text-white text-sm font-medium hover:bg-cdp-accent/90 transition-colors"
+          className="px-5 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-all duration-150 shadow-sm"
         >
           Search
         </button>
       </form>
 
       {isLoading && (
-        <div className="flex items-center justify-center py-16">
-          <div className="w-6 h-6 border-2 border-cdp-accent border-t-transparent rounded-full animate-spin" />
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-5">
+            <div className="bg-white border border-cdp-border rounded-xl p-5 shadow-card animate-pulse">
+              <div className="h-3 w-24 bg-slate-200 rounded mb-4" />
+              <div className="h-20 bg-slate-100 rounded" />
+            </div>
+            <div className="bg-white border border-cdp-border rounded-xl p-5 shadow-card animate-pulse">
+              <div className="h-3 w-20 bg-slate-200 rounded mb-3" />
+              <div className="h-4 w-full bg-slate-100 rounded mb-2" />
+              <div className="h-4 w-3/4 bg-slate-100 rounded mb-3" />
+              <div className="flex gap-2 mb-3">
+                <div className="h-5 w-16 bg-slate-100 rounded" />
+                <div className="h-5 w-20 bg-slate-100 rounded" />
+              </div>
+              <div className="h-16 bg-slate-100 rounded" />
+            </div>
+          </div>
         </div>
       )}
 
       {error && (
-        <div className="text-center py-8 text-cdp-text-muted text-sm">
-          Profile not found. Try a different UID.
+        <div className="flex flex-col items-center justify-center py-12">
+          <Search size={24} className="text-slate-300 mb-3" />
+          <p className="text-sm text-slate-500 font-medium">Profile not found</p>
+          <p className="text-xs text-slate-400 mt-1">Try a different UID.</p>
         </div>
       )}
 
       {profile && !isLoading && (
         <>
           {/* Session Graph + Profile Info */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6">
             <motion.div
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-cdp-card border border-white/5 rounded-xl p-5"
+              className="bg-white border border-cdp-border rounded-xl p-5 shadow-card"
             >
-              <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-4">
-                Session Graph
+              <div className="flex items-center gap-2 mb-4">
+                <Network size={14} className="text-slate-500" />
+                <span className="text-xs font-semibold text-slate-600 tracking-wide">Session Graph</span>
               </div>
               <SessionGraph sessions={profile.sessions} />
             </motion.div>
@@ -119,67 +134,92 @@ export default function IdentityExplorer() {
             <motion.div
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-cdp-card border border-white/5 rounded-xl p-5"
+              className="bg-white border border-cdp-border rounded-xl p-6 shadow-card"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <Fingerprint size={14} className="text-cdp-accent" />
-                  <span className="text-xs font-medium text-cdp-text">Global UID</span>
+                  <Fingerprint size={16} className="text-blue-600" />
+                  <span className="text-sm font-semibold text-slate-900">Global UID</span>
                 </div>
-                <button onClick={copyUid} className="flex items-center gap-1 text-[10px] text-cdp-accent hover:text-cdp-accent/80">
-                  <Copy size={10} /> Copy
+                <button
+                  onClick={copyUid}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-150"
+                >
+                  <Copy size={12} /> Copy
                 </button>
               </div>
-              <code className="text-xs font-mono text-cdp-text-muted break-all">{profile._id}</code>
+              <code className="text-xs font-mono text-slate-500 break-all bg-slate-50 px-2 py-1 rounded border border-slate-200 block">{profile._id}</code>
 
-              <div className="flex flex-wrap gap-1.5 mt-3">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {profile.devices.map((d, i) => (
-                  <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-white/5 text-cdp-text-muted">
+                  <span key={i} className="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 font-medium border border-slate-200">
+                    <Smartphone size={10} />
                     {d}
                   </span>
                 ))}
               </div>
 
-              <div className="mt-3 text-[10px] text-cdp-text-muted">
+              <div className="flex flex-wrap gap-3 mt-3 text-xs text-slate-500">
                 {profile.locations.map((l, i) => (
-                  <span key={i} className="mr-3">{l.city}, {l.country}</span>
+                  <span key={i} className="inline-flex items-center gap-1">
+                    <MapPin size={10} />
+                    {l.city}, {l.country}
+                  </span>
                 ))}
               </div>
 
               {profile.last_intent_profile && (
-                <div className="mt-4 p-3 rounded-lg bg-cdp-accent/5 border border-cdp-accent/10">
-                  <div className="text-[10px] font-medium text-cdp-text-muted mb-1">Intent Profile</div>
-                  <p className="text-[11px] text-cdp-text-muted leading-relaxed">
+                <div className="mt-5 p-4 rounded-lg bg-blue-50 border border-blue-200">
+                  <div className="flex items-center gap-1.5 mb-1.5">
+                    <User size={12} className="text-blue-600" />
+                    <span className="text-[11px] font-semibold text-blue-700">Intent Profile</span>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
                     {profile.last_intent_profile}
                   </p>
                 </div>
               )}
 
-              <div className="mt-3 text-[9px] text-cdp-text-muted font-mono">
+              <div className="mt-4 flex items-center gap-1.5 text-[11px] text-slate-400 font-mono">
+                <Clock size={11} />
                 Last updated: {new Date(profile.last_updated).toLocaleString()}
               </div>
             </motion.div>
           </div>
 
           {/* Sessions List */}
-          <div className="bg-cdp-card border border-white/5 rounded-xl p-5">
-            <div className="text-[10px] font-medium text-cdp-text-muted uppercase tracking-wider mb-3">
-              Sessions ({profile.sessions.length})
+          <div className="bg-white border border-cdp-border rounded-xl shadow-card overflow-hidden">
+            <div className="px-5 py-4 border-b border-cdp-border bg-slate-50/50">
+              <span className="text-xs font-semibold text-slate-600">
+                Sessions <span className="text-slate-400 font-normal">({profile.sessions.length})</span>
+              </span>
             </div>
-            <div className="space-y-2">
+            <div className="p-5 space-y-2">
               {profile.sessions.map((s, i) => (
-                <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-white/[0.02] border border-white/5">
+                <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-slate-50 border border-slate-200 hover:bg-blue-50/50 hover:border-blue-200 transition-all duration-150">
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-medium ${s.platform === 'A' ? 'text-cdp-accent' : 'text-cdp-warning'}`}>
+                    <span className={`inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold ${
+                      s.platform === 'A' ? 'text-blue-600 bg-blue-50' : 'text-amber-600 bg-amber-50'
+                    }`}>
                       Platform {s.platform}
                     </span>
-                    <span className="text-[10px] font-mono text-cdp-text-muted">{s.session_id.substring(0, 12)}...</span>
+                    <span className="text-[11px] font-mono text-slate-500">{s.session_id.substring(0, 12)}...</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <StatusBadge status={s.method} />
-                    <span className="text-[10px] font-mono text-cdp-text-muted">
-                      {(s.confidence * 100).toFixed(0)}%
-                    </span>
+                  <div className="flex items-center gap-3">
+                    <StatusBadge status={s.method} size="sm" />
+                    <div className="flex items-center gap-1.5">
+                      <div className={`h-1.5 w-12 rounded-full bg-slate-200 overflow-hidden`}>
+                        <div
+                          className={`h-full rounded-full transition-all duration-300 ${
+                            s.confidence >= 0.85 ? 'bg-emerald-500' : s.confidence >= 0.6 ? 'bg-amber-500' : 'bg-red-500'
+                          }`}
+                          style={{ width: `${s.confidence * 100}%` }}
+                        />
+                      </div>
+                      <span className="text-[11px] font-mono text-slate-500 min-w-[2.5rem]">
+                        {(s.confidence * 100).toFixed(0)}%
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -190,7 +230,7 @@ export default function IdentityExplorer() {
 
       {/* Match Method Stats */}
       {evalMetrics && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <MetricCard
             title="Deterministic Matches"
             value={evalMetrics.deterministic.f1.toFixed(4)}
